@@ -1,6 +1,6 @@
 # JSON Resume
 
-> A lightweight solution to maintain your résumé in machine-readable JSON and generate a styled HTML version on demand.
+> A lightweight solution to maintain your résumé in type-safe TypeScript with Zod validation, generating JSON and styled HTML on demand.
 
 > [Resume Website](https://raw.githack.com/thatbeautifuldream/json-resume/main/resume.html)
 
@@ -8,44 +8,61 @@
 
 ## Purpose
 
-- Store your entire résumé in a single JSON file (`resume.json`) following the [JSON Resume](https://jsonresume.org/) schema
-- Render it to a responsive HTML page (`resume.html`) using an off-the-shelf theme
+- Store your entire résumé in a single TypeScript file (`src/resume.data.ts`)
+- Validate the data against a Zod schema (`src/resume.schema.ts`) based on the [JSON Resume](https://jsonresume.org/) standard
+- Generate a standard `resume.json` file from the TypeScript source
+- Render the JSON to a responsive HTML page (`resume.html`) using an off-the-shelf theme
 
 ## Files
 
-- `resume.json` - your full resume data (basics, work history, skills, projects, etc.)
+- `src/resume.data.ts` - your primary resume data source (typed and validated)
+- `src/resume.schema.ts` - Zod schema defining the structure and types for validation
+- `resume.json` - the **generated** JSON output, compatible with the JSON Resume standard
 - `resume.html` - the generated HTML output (can host or share)
-- `package.json` - defines dependencies and the "render" script:
-  - `resumed` - the CLI tool that reads your JSON and emits HTML
-  - `jsonresume-theme-even` - the CSS/HTML template used for styling
+- `package.json` - defines dependencies and scripts:
+  - `generate:resume` script: Runs `ts-node scripts/generate-resume.ts` to validate `resume.data.ts` and create `resume.json`
+  - `render` script: Runs `resumed render resume.json ...` to create `resume.html`
+  - Dependencies: `zod` for validation, `ts-node` to run TS scripts, `resumed` CLI, `jsonresume-theme-even` theme.
+- `scripts/generate-resume.ts` - the script that validates data and generates `resume.json`
 - `pnpm-lock.yaml` - lockfile if you use pnpm (you could also switch to npm or yarn)
 
 ## How it works
 
-1. Install dependencies:
+1.  **Install dependencies:**
 
-   ```bash
-   pnpm install
-   # or npm install
-   ```
+    ```bash
+    pnpm install
+    # or npm install
+    ```
 
-2. Run the render script:
+2.  **Generate `resume.json`:**
 
-   ```bash
-   pnpm run render
-   # or npm run render
-   ```
+    Update your resume details in `src/resume.data.ts`. Then run:
 
-   This invokes:
+    ```bash
+    pnpm run generate:resume
+    # or npm run generate:resume
+    ```
 
-   ```bash
-   resumed render resume.json --theme jsonresume-theme-even
-   ```
+    This validates the data using the Zod schema and outputs `resume.json`.
 
-3. Open or deploy `resume.html` anywhere (GitHub Pages, S3, your personal site, etc.)
+3.  **Render HTML:**
+
+    ```bash
+    pnpm run render
+    # or npm run render
+    ```
+
+    This invokes `resumed render resume.json --theme jsonresume-theme-even` using the generated JSON file.
+
+4.  **View or Deploy:**
+
+    Open or deploy `resume.html` anywhere (GitHub Pages, S3, your personal site, etc.)
 
 ## Benefits
 
-- Keep your résumé source under version control in JSON
+- Keep your résumé source strongly-typed and validated using TypeScript and Zod
+- Maintain data in a more developer-friendly format (`.ts`)
 - Instantly regenerate a consistent, themeable HTML whenever you update your data
 - Swap in new JSON Resume themes without touching your content
+- Automatically generate the standard `resume.json` for compatibility with other tools
