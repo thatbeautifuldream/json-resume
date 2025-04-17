@@ -1,17 +1,21 @@
 {
   "name": "json-resume",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "render": "resumed render resume.json --theme jsonresume-theme-even"
+    "generate:resume": "ts-node scripts/generate-resume.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.5.2",
   "dependencies": {
-    "jsonresume-theme-even": "^0.23.0",
-    "resumed": "^5.0.0"
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2"
   }
 }

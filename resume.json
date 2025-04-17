@@ -32,10 +32,10 @@
   "work": [
     {
       "name": "Merlin AI by Foyer",
+      "location": "Bengaluru, Karnataka, India",
       "position": "Product Engineer",
       "url": "https://getmerlin.in",
       "startDate": "2025-02-01",
-      "location": "Bengaluru, Karnataka, India",
       "summary": "",
       "highlights": [
         "Shipped UI for ChatGPT Imports enabling users to bring their chat history with ease to Merlin AI."
@@ -43,11 +43,11 @@
     },
     {
       "name": "SARAL - The Influencer OS",
+      "location": "Bengaluru, Karnataka, India",
       "position": "Software Engineer",
       "url": "https://getsaral.com",
       "startDate": "2025-01-01",
       "endDate": "2025-02-01",
-      "location": "Bengaluru, Karnataka, India",
       "summary": "",
       "highlights": [
         "Shipped a revamped internal dashboard improving access to key metrics and reducing onboarding time.",
@@ -58,11 +58,11 @@
     },
     {
       "name": "Proof-of-Skill Protocol",
+      "location": "Bengaluru, Karnataka, India",
       "position": "Founding Product Engineer",
       "url": "https://proofofskill.org",
       "startDate": "2024-06-01",
       "endDate": "2024-12-31",
-      "location": "Bengaluru, Karnataka, India",
       "summary": "",
       "highlights": [
         "Led MVP development for core workflows: Skill Validators, Candidates, Recruiters.",
@@ -74,11 +74,11 @@
     },
     {
       "name": "Freelance",
+      "location": "Bengaluru, Karnataka, India",
       "position": "Independent Contractor",
       "url": "https://milindmishra.com",
       "startDate": "2024-02-01",
       "endDate": "2024-05-31",
-      "location": "Bengaluru, Karnataka, India",
       "summary": "",
       "highlights": [
         "Built a platform for recruiter insights and candidate search.",
@@ -88,11 +88,11 @@
     },
     {
       "name": "StartupHire",
+      "location": "Remote",
       "position": "Software Engineer",
       "url": "https://www.linkedin.com/company/startuphire",
       "startDate": "2023-08-01",
       "endDate": "2024-01-31",
-      "location": "Remote",
       "summary": "",
       "highlights": [
         "Led a team to prototype a recruiting pipeline.",
@@ -101,10 +101,10 @@
     },
     {
       "name": "National Yang Ming Chiao Tung University",
+      "location": "Hsinchu, Taiwan",
       "position": "Research Assistant",
       "startDate": "2023-02-01",
       "endDate": "2023-07-31",
-      "location": "Hsinchu, Taiwan",
       "summary": "",
       "highlights": [
         "Developed frontend for indoor positioning system with MQTT, IoT, UWB tech.",
@@ -114,10 +114,10 @@
     },
     {
       "name": "Locus Connect",
+      "location": "Hsinchu, Taiwan",
       "position": "Software Engineer",
       "startDate": "2022-07-01",
       "endDate": "2023-01-31",
-      "location": "Hsinchu, Taiwan",
       "summary": "",
       "highlights": [
         "Built frontend for 3D indoor positioning platform.",
@@ -127,10 +127,10 @@
     },
     {
       "name": "iNeuron.ai",
+      "location": "Bengaluru, Karnataka, India",
       "position": "UX Designer",
       "startDate": "2022-05-01",
       "endDate": "2022-06-30",
-      "location": "Bengaluru, Karnataka, India",
       "summary": "",
       "highlights": [
         "Designed user flows and managed design system.",
@@ -139,10 +139,10 @@
     },
     {
       "name": "Plusklass",
+      "location": "Remote",
       "position": "Technical Writer",
       "startDate": "2022-01-01",
       "endDate": "2022-04-30",
-      "location": "Remote",
       "summary": "",
       "highlights": [
         "Developed comprehensive educational materials for HTML, CSS, JavaScript.",
@@ -204,7 +204,11 @@
     {
       "name": "Project & Ops",
       "level": "Intermediate",
-      "keywords": ["Project Management", "DevOps", "User Experience (UX)"]
+      "keywords": [
+        "Project Management",
+        "DevOps",
+        "User Experience (UX)"
+      ]
     }
   ],
   "projects": [
