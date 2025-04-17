@@ -10,6 +10,17 @@ const iso8601DateSchema = z
 
 const MetaSchema = z.object({
   theme: z.string().optional(),
+  themeOptions: z
+    .object({
+      colors: z.object({
+        background: z.array(z.string()).optional(),
+        dimmed: z.array(z.string()).optional(),
+        primary: z.array(z.string()).optional(),
+        secondary: z.array(z.string()).optional(),
+        accent: z.array(z.string()).optional(),
+      }),
+    })
+    .optional(),
   canonical: z.string().url().optional(),
   version: z.string().optional(), // e.g., v1.0.0 (SemVer recommended)
   lastModified: z.string().datetime().optional(), // JSON schema doesn't specify time, keep simple string for now
