@@ -2,6 +2,10 @@
 
 > A lightweight solution to maintain your résumé in machine-readable JSON and generate a styled HTML version on demand.
 
+> [Resume Website](https://raw.githack.com/thatbeautifuldream/json-resume/main/resume.html)
+
+> [Resume from JSON Registry](https://registry.jsonresume.org/thatbeautifuldream)
+
 ## Purpose
 
 - Store your entire résumé in a single JSON file (`resume.json`) following the [JSON Resume](https://jsonresume.org/) schema
