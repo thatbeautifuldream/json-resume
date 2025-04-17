@@ -5,8 +5,9 @@
   "description": "Resume following JSON Resume Schema",
   "main": "index.js",
   "scripts": {
-    "render": "resumed render resume.json --theme jsonresume-theme-even",
-    "generate:resume": "ts-node scripts/generate-resume.ts"
+    "render:html": "resumed render resume.json --theme jsonresume-theme-even",
+    "generate:json": "ts-node scripts/generate-resume.ts",
+    "build": "pnpm run generate:json && pnpm run render:html"
   },
   "keywords": [],
   "author": "Milind Mishra",
