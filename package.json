@@ -1,0 +1,17 @@
+{
+  "name": "json-resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "render": "resumed render resume.json --theme jsonresume-theme-even"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.5.2",
+  "dependencies": {
+    "jsonresume-theme-even": "^0.23.0",
+    "resumed": "^5.0.0"
+  }
+}
