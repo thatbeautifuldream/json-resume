@@ -9,7 +9,14 @@
     "generate:json": "ts-node scripts/generate-resume.ts",
     "build:resume": "pnpm run generate:json && pnpm run render:html"
   },
-  "keywords": [],
+  "keywords": [
+    "json-resume",
+    "resume",
+    "html",
+    "json",
+    "typescript",
+    "zod"
+  ],
   "author": "Milind Mishra",
   "license": "MIT",
   "packageManager": "pnpm@10.5.2",
