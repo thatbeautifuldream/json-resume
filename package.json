@@ -7,7 +7,7 @@
   "scripts": {
     "render:html": "resumed render resume.json --theme jsonresume-theme-even",
     "generate:json": "ts-node scripts/generate-resume.ts",
-    "build": "pnpm run generate:json && pnpm run render:html"
+    "build:resume": "pnpm run generate:json && pnpm run render:html"
   },
   "keywords": [],
   "author": "Milind Mishra",
