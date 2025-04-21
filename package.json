@@ -7,7 +7,8 @@
   "scripts": {
     "prepare:json": "ts-node scripts/generate-resume.ts",
     "generate:html": "resumed render resume.json",
-    "generate:resume": "pnpm run prepare:json && pnpm run generate:html"
+    "generate:resume": "pnpm run prepare:json && pnpm run generate:html",
+    "prepare": "husky"
   },
   "keywords": [
     "json-resume",
@@ -21,13 +22,13 @@
   "license": "MIT",
   "packageManager": "pnpm@10.5.2",
   "dependencies": {
-    "jsonresume-theme-even": "^0.23.0",
     "jsonresume-theme-stackoverflow": "^2.1.0",
     "resumed": "^5.0.0",
     "zod": "^3.24.3"
   },
   "devDependencies": {
     "@types/node": "^22.14.1",
+    "husky": "^9.1.7",
     "ts-node": "^10.9.2"
   }
 }
