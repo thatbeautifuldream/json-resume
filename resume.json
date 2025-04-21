@@ -122,6 +122,7 @@
       "name": "National Yang Ming Chiao Tung University",
       "location": "Hsinchu, Taiwan",
       "position": "Research Assistant",
+      "url": "https://www.nycu.edu.tw/",
       "startDate": "2023-02-01",
       "endDate": "2023-07-31",
       "highlights": [
@@ -134,6 +135,7 @@
       "name": "Locus Connect",
       "location": "Hsinchu, Taiwan",
       "position": "Software Engineer",
+      "url": "https://www.locusconnect.com/",
       "startDate": "2022-07-01",
       "endDate": "2023-01-31",
       "highlights": [
@@ -146,6 +148,7 @@
       "name": "iNeuron.ai",
       "location": "Bengaluru, Karnataka, India",
       "position": "UX Designer",
+      "url": "https://www.ineuron.ai/",
       "startDate": "2022-05-01",
       "endDate": "2022-06-30",
       "highlights": [
@@ -157,6 +160,7 @@
       "name": "Plusklass",
       "location": "Remote",
       "position": "Technical Writer",
+      "url": "https://www.plusklass.com/",
       "startDate": "2022-01-01",
       "endDate": "2022-04-30",
       "highlights": [
@@ -176,6 +180,7 @@
     },
     {
       "institution": "Visvesvaraya Technological University",
+      "url": "https://www.vtu.ac.in/",
       "area": "Electronics and Communication",
       "studyType": "Bachelor of Engineering",
       "endDate": "2022-01-01"

@@ -108,6 +108,7 @@ export const resumeData: TResumeSchema = {
     {
       name: "National Yang Ming Chiao Tung University",
       position: "Research Assistant",
+      url: "https://www.nycu.edu.tw/",
       startDate: "2023-02-01",
       endDate: "2023-07-31",
       location: "Hsinchu, Taiwan",
@@ -120,6 +121,7 @@ export const resumeData: TResumeSchema = {
     {
       name: "Locus Connect",
       position: "Software Engineer",
+      url: "https://www.locusconnect.com/",
       startDate: "2022-07-01",
       endDate: "2023-01-31",
       location: "Hsinchu, Taiwan",
@@ -132,6 +134,7 @@ export const resumeData: TResumeSchema = {
     {
       name: "iNeuron.ai",
       position: "UX Designer",
+      url: "https://www.ineuron.ai/",
       startDate: "2022-05-01",
       endDate: "2022-06-30",
       location: "Bengaluru, Karnataka, India",
@@ -143,6 +146,7 @@ export const resumeData: TResumeSchema = {
     {
       name: "Plusklass",
       position: "Technical Writer",
+      url: "https://www.plusklass.com/",
       startDate: "2022-01-01",
       endDate: "2022-04-30",
       location: "Remote",
@@ -164,6 +168,7 @@ export const resumeData: TResumeSchema = {
     {
       institution: "Visvesvaraya Technological University",
       area: "Electronics and Communication",
+      url: "https://www.vtu.ac.in/",
       studyType: "Bachelor of Engineering",
       endDate: "2022-01-01",
     },
