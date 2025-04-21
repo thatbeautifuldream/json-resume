@@ -1,506 +1,1323 @@
 <!doctype html>
-    <html lang="en" style="--color-background-light:#ffffff; --color-background-dark:#000000; --color-dimmed-light:#f3f4f6; --color-dimmed-dark:#0f0f0f; --color-primary-light:#000000; --color-primary-dark:#ffffff; --color-secondary-light:#6b7280; --color-secondary-dark:#9ca3af; --color-accent-light:#10b981; --color-accent-dark:#22c55e;">
-      <head>
-        <meta charset="utf-8" />
-        
-    <title>Milind Kumar Mishra</title>
-    
-  
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
-        <style>
-          :root{color-scheme:light dark;--color-background-light: #ffffff;--color-dimmed-light: #f3f4f5;--color-primary-light: #191e23;--color-secondary-light: #6c7781;--color-accent-light: #0073aa;--color-background-dark: #191e23;--color-dimmed-dark: #23282d;--color-primary-dark: #fbfbfc;--color-secondary-dark: #ccd0d4;--color-accent-dark: #00a0d2;--color-background: var(--color-background-light);--color-dimmed: var(--color-dimmed-light);--color-primary: var(--color-primary-light);--color-secondary: var(--color-secondary-light);--color-accent: var(--color-accent-light);--scale-ratio: 1.25;--scale0: 1rem;--scale1: calc(var(--scale0) * var(--scale-ratio));--scale2: calc(var(--scale1) * var(--scale-ratio));--scale3: calc(var(--scale2) * var(--scale-ratio));--scale4: calc(var(--scale3) * var(--scale-ratio));--scale5: calc(var(--scale4) * var(--scale-ratio))}@media (prefers-color-scheme: dark){:root{--color-background: var(--color-background-dark);--color-dimmed: var(--color-dimmed-dark);--color-primary: var(--color-primary-dark);--color-secondary: var(--color-secondary-dark);--color-accent: var(--color-accent-dark)}}*{box-sizing:border-box;margin:0;padding:0}html{font-size:14px}body{background:var(--color-background);color:var(--color-primary);display:grid;font:1em/1.5 Lato,sans-serif;gap:2em;grid-template-columns:[full-start] 1fr [main-start side-start] minmax(min-content,12em) [side-end content-start] minmax(min-content,36em) [main-end content-end] 1fr [full-end];grid-template-rows:auto [content] 0;margin-bottom:4em}body:before{content:"";grid-column:full;grid-row:content}ol,ul{padding-left:1em}:not(.icon-list,.tag-list)>li+li{margin-top:.4em}li::marker,.network{color:var(--color-secondary)}a{color:var(--color-accent);text-decoration:none}a:focus,a:hover{text-decoration:underline}h1,h2,h3,h5{font-weight:400}h1,h2,h3{line-height:1.2}h1{font-size:var(--scale5)}h2{color:var(--color-secondary);font-size:var(--scale4)}h3{color:var(--color-secondary);font-size:var(--scale3);grid-column:side;margin-bottom:1rem}h4{font-size:var(--scale2)}h5{font-size:var(--scale1)}h6{font-size:var(--scale0)}blockquote{border-left:.2em solid var(--color-dimmed);padding-left:1em}cite{color:var(--color-secondary);font-style:inherit}cite:before{content:"— "}svg{margin-right:.2em;vertical-align:text-bottom}.masthead{background:var(--color-dimmed);display:inherit;gap:inherit;grid-column:full;grid-template-columns:inherit;padding:4em 0;text-align:center}.masthead>*,section{grid-column:main}.masthead>img{border:4px solid;border-radius:50%;margin:0 auto;max-width:12em}article>*+*,blockquote>*+*,.timeline>div>*+*{margin-top:.6em}.meta{color:var(--color-secondary)}.stack{display:grid;gap:1.5em}.icon-list{display:flex;flex-wrap:wrap;gap:.4em 1em;justify-content:center;list-style:none;padding:0}.grid-list{display:grid;gap:1em}.tag-list{display:flex;flex-wrap:wrap;gap:.4em;list-style:none;padding:0}.tag-list>li{background:var(--color-dimmed);border-radius:.2em;padding:.2em .6em}.timeline>div{position:relative}.timeline>div:not(:last-child){padding-bottom:1rem}.timeline>div:not(:last-child):before{content:"";position:absolute;top:1rem;left:-15px;width:2px;height:100%;background:var(--color-secondary)}.timeline>div:not(:only-child):after{content:"";position:absolute;top:.6rem;left:-20px;width:8px;height:8px;background:var(--color-secondary);border:2px solid var(--color-background);border-radius:50%}@media print,(min-width: 48em){h3{text-align:right;margin-bottom:inherit}.masthead{text-align:inherit}.masthead>*,section{grid-column:content}.masthead img{grid-column:side;grid-row:span 2;max-width:100%}section{display:contents}.icon-list{flex-direction:column}.grid-list{grid-template-columns:repeat(auto-fit,minmax(calc((100% - 1em)/2),1fr))}}@media print{.duration{display:none}}
-        </style>
-        <script type="module">
-          const pluralize = (num, str) => `${num} ${num === 1 ? str : str.concat('s')}`
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Milind Kumar Mishra</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
 
-class TimeDuration extends HTMLElement {
-  connectedCallback() {
-    const [from, to] = this.querySelectorAll('time')
-    if (!from) return
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-    const startDate = new Date(from.dateTime || from.textContent)
-    const endDate = new Date(to ? to.dateTime || to.textContent : Date.now())
-    const diffDate = new Date(endDate - startDate)
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 
-    const years = diffDate.getFullYear() - 1970
-    const months = diffDate.getMonth()
-    const days = diffDate.getDate() - 1
+body {
+  line-height: 1;
+}
 
-    const segments = [
-      years && pluralize(years, 'yr'),
-      months && pluralize(months, 'mo'),
-      days && !years && !months && pluralize(days, 'day'),
-    ].filter(Boolean)
-    if (!segments.length) return
+ol,
+ul {
+  list-style: none;
+}
 
-    const duration = document.createElement('time')
-    duration.classList.add('duration')
-    duration.textContent = '· '.concat(segments.join(' '))
+blockquote,
+q {
+  quotes: none;
+}
 
-    this.append(' ', duration)
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  color: #40484f;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.46153846;
+  text-align: left;
+}
+
+p {
+  display: block;
+}
+
+a {
+  color: #0095ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c65a5;
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 1.3em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.67rem;
+}
+
+h3 {
+  font-size: 1.27rem;
+}
+
+em {
+  color: #757575;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* main container */
+
+#resume {
+  padding: 1.5rem;
+}
+
+/* every section wrapper */
+
+.section {
+  margin-bottom: 1rem;
+}
+
+section .location {
+  margin-right: 0.5em;
+  color: #606d76;
+  font-weight: 700;
+}
+
+#contact {
+  margin-top: 0.5rem;
+}
+
+#profiles .item {
+  padding: 0;
+}
+
+#header > #profiles,
+#header > #contact,
+#skills,
+#languages,
+#interests {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+#header > div {
+  line-height: 1.5;
+}
+
+#header > div > div {
+  margin-right: 1.2em;
+}
+
+#header h1.name {
+  font-size: 2.8rem;
+  font-weight: 100;
+  line-height: 100%;
+}
+
+#header h2.label {
+  color: #202931;
+  font-size: 1.47rem;
+  font-weight: 300;
+}
+
+#header .image {
+  width: 11em;
+  float: right;
+  border-radius: 4px;
+}
+
+.section.summary header {
+  margin-top: 1rem;
+}
+
+.main-summary {
+  background: #f1f8ff;
+  padding: 1.2em 1em;
+}
+
+.main-summary p {
+  margin: 0;
+}
+
+.section-title {
+  display: inline-block;
+  background: #fff;
+  padding: 0 1em 0.3em 0;
+  color: #ff6d1f;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.section > header {
+  position: relative;
+}
+
+.fa {
+  margin-right: 0.25em;
+}
+
+.section > header::after {
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  height: 1px;
+  background: #ccc;
+  content: "";
+  width: 100%;
+  z-index: -100;
+  display: block;
+}
+
+.section.main-summary > section {
+  margin: 0;
+}
+
+.section > section > header {
+  font-size: 1.38rem;
+  position: relative;
+  margin-top: 0.7em;
+}
+
+.section > section > header:first-of-type {
+  margin: 0;
+}
+
+.section > section > header .space-left {
+  position: absolute;
+  left: -1.56rem;
+  top: 5px;
+  color: #aaa;
+  line-height: 1;
+  opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+  display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+  font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+  content: "at ";
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+  color: #606d76;
+  font-weight: 400;
+}
+
+.section header .date {
+  display: block;
+  font-size: 1rem;
+  padding: 0.1em 0;
+  color: #606d76;
+  font-weight: 400;
+}
+
+.keywords,
+.courses {
+  margin: 0.5em 0;
+}
+
+.keywords li,
+.courses li {
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  padding: 4px 5px 5px;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #3e6d8e;
+  background-color: #dfeaf1;
+  border: 0 solid #dfeaf1;
+  white-space: nowrap;
+}
+
+.keywords li:hover,
+.courses li:hover {
+  background: #dfeaf0;
+}
+
+.highlights {
+  margin: 1em 0 0 0;
+}
+
+.highlights > li > p {
+  margin-bottom: 0.5em;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.gpa {
+  clear: both;
+  padding-bottom: 0.5em;
+}
+
+.fa.social {
+  font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+
+.google-plus {
+  color: #dd4b39;
+}
+
+.tumblr {
+  color: #32506d;
+}
+
+.foursquare {
+  color: #0072b1;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.linkedin {
+  color: #007bb6;
+}
+
+.pinterest {
+  color: #cb2027;
+}
+
+.dribbble {
+  color: #ea4c89;
+}
+
+.instagram {
+  color: #517fa4;
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.soundcloud {
+  color: #ff3a00;
+}
+
+.wordpress {
+  color: #21759b;
+}
+
+.youtube {
+  color: #bb0000;
+}
+
+.github {
+  color: #171515;
+}
+
+.stack-overflow {
+  color: #828386;
+  position: relative;
+}
+
+.flickr {
+  color: #ff0084;
+}
+
+.reddit {
+  color: #ff4500;
+}
+
+.hacker-news {
+  color: #ff6600;
+}
+
+.stack-overflow::after {
+  position: absolute;
+  left: 0;
+  content: "\f16c";
+  color: #f68a1f;
+  overflow: hidden;
+  height: 100%;
+}
+
+.telegram {
+  color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+  width: 15em;
+  padding: 0 0.5em 0.5em 0;
+  border-bottom: none;
+}
+
+#skills .item {
+  width: 16em;
+}
+
+#skills .item .keywords {
+  width: 15em;
+}
+
+/* Skill chart */
+
+.level {
+  margin-bottom: 0.5em;
+}
+
+.level em {
+  padding-left: 0.2em;
+}
+
+.level .bar {
+  border: 1px solid #ddd;
+  display: block;
+  width: 10em;
+  height: 5px;
+  position: relative;
+}
+
+.level .bar::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  background: black;
+  height: 5px;
+}
+
+.level.beginner .bar::after {
+  background: #eb5f51;
+  width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+  background: #ffdf1f;
+  width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+  background: #5cb85c;
+  width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+  background: #59c596;
+  width: 10em;
+}
+
+#references .item {
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+  border-left: 5px solid #ff6d1f;
+}
+
+.section > section > section {
+  margin-bottom: 1rem;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display {
+  display: block;
+  opacity: 1 !important;
+}
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+  #resume {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section header .date {
+    float: right;
+    font-weight: 600;
+    color: #000;
   }
 }
 
-customElements.define('time-duration', TimeDuration)
+/****************
+*		LAPTOP
+****************/
 
-        </script>
-      </head>
-      <body>
-        
-    <header class="masthead">
-      <img src="https://avatars.githubusercontent.com/u/28717686?v=4" alt="" />
-      <div><h1>Milind Kumar Mishra</h1> <h2>Product Engineer</h2></div>
-      
-      <ul class="icon-list">
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Bengaluru, India
-          </li>
-        
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            <a href="mailto:milindmishra4@gmail.com">milindmishra4@gmail.com</a>
-          </li>
-        
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            <a href="tel:+919631333128">+919631333128</a>
-          </li>
-        
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg> <a href="https://milindmishra.com">milindmishra.com</a></li>
-        
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> <a href="https://linkedin.com/in/mishramilind">mishramilind</a>
-              <span class="network">(LinkedIn)</span>
-            </li>
-          
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> <a href="https://github.com/thatbeautifuldream">thatbeautifuldream</a>
-              <span class="network">(GitHub)</span>
-            </li>
-          
-      </ul>
-    </header>
-   
-      <section id="work">
-        <h3>Work</h3>
-        <div class="stack">
-          
-              <article>
-                <header>
-                  <h4><a href="https://getmerlin.in">Merlin AI by Foyer</a></h4>
-                  <div class="meta"></div>
-                </header>
-                <div class="timeline">
-                  
-                      <div>
-                        <div>
-                          <h5>Product Engineer</h5>
-                          <div class="meta">
-                            <div><time-duration><time datetime="2025-02-01">Feb 2025</time> – Present</time-duration></div>
-                            <div>Bengaluru, Karnataka, India</div>
-                          </div>
-                        </div>
-                        
-                        
-                          <ul>
-                            <li><p>Shipped UI for ChatGPT Imports enabling users to bring their chat history with ease to Merlin AI.</p></li>
-                          </ul>
-                        
-                      </div>
-                    
-                </div>
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://getsaral.com">SARAL - The Influencer OS</a></h4>
-                  <div class="meta"></div>
-                </header>
-                <div class="timeline">
-                  
-                      <div>
-                        <div>
-                          <h5>Software Engineer</h5>
-                          <div class="meta">
-                            <div><time-duration><time datetime="2025-01-01">Jan 2025</time> – <time datetime="2025-02-01">Feb 2025</time></time-duration></div>
-                            <div>Bengaluru, Karnataka, India</div>
-                          </div>
-                        </div>
-                        
-                        
-                          <ul>
-                            <li><p>Shipped a revamped internal dashboard improving access to key metrics and reducing onboarding time.</p></li><li><p>Shipped multi-select drag-and-drop on relationship board for bulk operations.</p></li><li><p>Developed content submission system for influencers to streamline approvals.</p></li><li><p>Optimized influencer performance monitoring for campaign managers.</p></li>
-                          </ul>
-                        
-                      </div>
-                    
-                </div>
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://proofofskill.org">Proof-of-Skill Protocol</a></h4>
-                  <div class="meta"></div>
-                </header>
-                <div class="timeline">
-                  
-                      <div>
-                        <div>
-                          <h5>Founding Product Engineer</h5>
-                          <div class="meta">
-                            <div><time-duration><time datetime="2024-06-01">Jun 2024</time> – <time datetime="2024-12-31">Dec 2024</time></time-duration></div>
-                            <div>Bengaluru, Karnataka, India</div>
-                          </div>
-                        </div>
-                        
-                        
-                          <ul>
-                            <li><p>Led MVP development for core workflows: Skill Validators, Candidates, Recruiters.</p></li><li><p>Integrated voting mechanism with consensus algorithm for validation fairness.</p></li><li><p>Built Candidate Flow: assessment recording, proctoring, cloud streaming.</p></li><li><p>Developed Recruiter Flow: skill heatmap generation and hiring insights.</p></li><li><p>Managed EC2, NGINX, PM2, and Next.js deployments for scale and availability.</p></li>
-                          </ul>
-                        
-                      </div>
-                    
-                </div>
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://milindmishra.com">Freelance</a></h4>
-                  <div class="meta"></div>
-                </header>
-                <div class="timeline">
-                  
-                      <div>
-                        <div>
-                          <h5>Independent Contractor</h5>
-                          <div class="meta">
-                            <div><time-duration><time datetime="2024-02-01">Feb 2024</time> – <time datetime="2024-05-31">May 2024</time></time-duration></div>
-                            <div>Bengaluru, Karnataka, India</div>
-                          </div>
-                        </div>
-                        
-                        
-                          <ul>
-                            <li><p>Built a platform for recruiter insights and candidate search.</p></li><li><p>Developed AI-powered quiz system using Vercel AI SDK, OpenAI, Fireworks AI.</p></li><li><p>Used Next.js for frontend with seamless AI integration.</p></li>
-                          </ul>
-                        
-                      </div>
-                    
-                </div>
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://www.linkedin.com/company/startuphire">StartupHire</a></h4>
-                  <div class="meta"></div>
-                </header>
-                <div class="timeline">
-                  
-                      <div>
-                        <div>
-                          <h5>Software Engineer</h5>
-                          <div class="meta">
-                            <div><time-duration><time datetime="2023-08-01">Aug 2023</time> – <time datetime="2024-01-31">Jan 2024</time></time-duration></div>
-                            <div>Remote</div>
-                          </div>
-                        </div>
-                        
-                        
-                          <ul>
-                            <li><p>Led a team to prototype a recruiting pipeline.</p></li><li><p>Integrated multiple job boards for centralized job tracking.</p></li>
-                          </ul>
-                        
-                      </div>
-                    
-                </div>
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://www.nycu.edu.tw/">National Yang Ming Chiao Tung University</a></h4>
-                  <div class="meta"></div>
-                </header>
-                <div class="timeline">
-                  
-                      <div>
-                        <div>
-                          <h5>Research Assistant</h5>
-                          <div class="meta">
-                            <div><time-duration><time datetime="2023-02-01">Feb 2023</time> – <time datetime="2023-07-31">Jul 2023</time></time-duration></div>
-                            <div>Hsinchu, Taiwan</div>
-                          </div>
-                        </div>
-                        
-                        
-                          <ul>
-                            <li><p>Developed frontend for indoor positioning system with MQTT, IoT, UWB tech.</p></li><li><p>Implemented 3D visualization using React, GSAP, and Three.js.</p></li><li><p>Improved positioning accuracy from 20cm to under 10cm.</p></li>
-                          </ul>
-                        
-                      </div>
-                    
-                </div>
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://www.locusconnect.com/">Locus Connect</a></h4>
-                  <div class="meta"></div>
-                </header>
-                <div class="timeline">
-                  
-                      <div>
-                        <div>
-                          <h5>Software Engineer</h5>
-                          <div class="meta">
-                            <div><time-duration><time datetime="2022-07-01">Jul 2022</time> – <time datetime="2023-01-31">Jan 2023</time></time-duration></div>
-                            <div>Hsinchu, Taiwan</div>
-                          </div>
-                        </div>
-                        
-                        
-                          <ul>
-                            <li><p>Built frontend for 3D indoor positioning platform.</p></li><li><p>Created and maintained marketing website.</p></li><li><p>Managed in-house infrastructure and Dockerized services.</p></li>
-                          </ul>
-                        
-                      </div>
-                    
-                </div>
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://www.ineuron.ai/">iNeuron.ai</a></h4>
-                  <div class="meta"></div>
-                </header>
-                <div class="timeline">
-                  
-                      <div>
-                        <div>
-                          <h5>UX Designer</h5>
-                          <div class="meta">
-                            <div><time-duration><time datetime="2022-05-01">May 2022</time> – <time datetime="2022-06-30">Jun 2022</time></time-duration></div>
-                            <div>Bengaluru, Karnataka, India</div>
-                          </div>
-                        </div>
-                        
-                        
-                          <ul>
-                            <li><p>Designed user flows and managed design system.</p></li><li><p>Created marketing posters and campaign assets.</p></li>
-                          </ul>
-                        
-                      </div>
-                    
-                </div>
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://www.plusklass.com/">Plusklass</a></h4>
-                  <div class="meta"></div>
-                </header>
-                <div class="timeline">
-                  
-                      <div>
-                        <div>
-                          <h5>Technical Writer</h5>
-                          <div class="meta">
-                            <div><time-duration><time datetime="2022-01-01">Jan 2022</time> – <time datetime="2022-04-30">Apr 2022</time></time-duration></div>
-                            <div>Remote</div>
-                          </div>
-                        </div>
-                        
-                        
-                          <ul>
-                            <li><p>Developed comprehensive educational materials for HTML, CSS, JavaScript.</p></li><li><p>Created structured learning content for beginners.</p></li>
-                          </ul>
-                        
-                      </div>
-                    
-                </div>
-              </article>
-            
-        </div>
-      </section>
-      
-      <section id="education">
-        <h3>Education</h3>
-        <div class="stack">
-          
-              <article>
-                <header>
-                  <h4><a href="https://www.nycu.edu.tw/">National Yang Ming Chiao Tung University</a></h4>
-                  <div class="meta">
-                    <strong>Computer Software Engineering</strong>
-                    <div><time-duration><time datetime="2023-02-01">Feb 2023</time> – <time datetime="2023-07-31">Jul 2023</time></time-duration></div>
-                  </div>
-                </header>
-                <p>Short Term Research Program</p>
-                
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://www.vtu.ac.in/">Visvesvaraya Technological University</a></h4>
-                  <div class="meta">
-                    <strong>Electronics and Communication</strong>
-                    
-                  </div>
-                </header>
-                <p>Bachelor of Engineering</p>
-                
-              </article>
-            
-        </div>
-      </section>
+@media screen and (min-width: 1025px) {
+  li {
+    margin-left: 1.5em;
+  }
+  #resume {
+    width: 820px;
+    margin: 2rem auto;
+  }
+  .section > section > header .space-left {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .section > section:not(.main-summary) {
+    margin-left: 1.67rem;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "| ";
+  }
+  .header-left {
+    float: left;
+    width: 70%;
+    word-break: normal;
+  }
+  .section header .date {
+    padding: 0.2em;
+  }
+  .display {
+    display: none;
+  }
+  .display:not(.none) {
+    display: block;
+  }
+}
+
+@media print {
+  #profiles a:not(.hide-href-print)::after{
+    content: " (" attr(href) ") ";
+  }
+  #profiles .url .show-only-url-print {
+    display: none;
+  }
+  #profiles .url a::after {
+    content: attr(href);
+  }
+  #resume {
+    margin: 0.1em;
+    padding: 0.1em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.25;
+  }
+  @page {
+    margin: 1cm 1.4cm;
+  }
+  .item-count {
+    display: none;
+  }
+  .company a {
+    color: #40484f;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "at ";
+  }
+  .main-summary {
+    padding: 0;
+    background: transparent;
+  }
+  .section {
+    margin: 0.8rem 0;
+    padding: 0;
+  }
+  .section header {
+    padding-bottom: 0.15rem;
+  }
+  .section .location {
+    padding-bottom: 0.15rem;
+  }
+  .section > section > section {
+    border-bottom: 1px solid #fdfdfd;
+    margin: .5em 0;
+  }
+  .section > section > section:last-of-type {
+    margin: 0;
+  }
+  .stack-overflow::after {
+    content: "";
+  }
+  .fa.social {
+    color: #828386;
+  }
+  ul {
+    margin-top: 0.4em;
+  }
+  ul,
+  li {
+    padding: 0;
+  }
+  ul.keywords li,
+  ul.courses li {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    background: transparent;
+  }
+  ul.keywords li::after,
+  ul.courses li::after {
+    padding: 0 0 0 0.1rem;
+    content: ", ";
+  }
+  ul.keywords::before,
+  ul.courses::before {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  #skills .item {
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem 0;
+    padding: 0;
+  }
+  #skills .level {
+    margin: 0.1rem 0;
+    font-weight: 400;
+  }
+  #skills .keywords {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .highlights {
+    margin: 0.5em 0 0 0;
+  }
+  .highlights > li > p {
+    margin-bottom: 0.3em;
+  }
+  ul.keywords::before {
+    content: "Skills: ";
+    font-size: 1rem;
+  }
+  #skills .keywords::before {
+    content: none;
+  }
+  .section p {
+    margin: 0;
+    padding: 0;
+  }
+  ul.courses::before {
+    content: "Major courses: ";
+    font-size: 1rem;
+  }
+  ul.keywords li,
+  ul.courses li {
+    font-size: 1rem;
+    line-height: inherit;
+  }
+  ul.keywords li:last-of-type::after,
+  ul.courses li:last-of-type::after {
+    content: "";
+  }
+  .level em {
+    font-style: normal;
+    padding: 0.1em 0;
+  }
+  .level .bar {
+    display: none;
+  }
+  #profiles .item {
+    padding: 0;
+  }
+  .item.display {
+    display: block;
+    opacity: 1 !important;
+  }
+  .fa-location-dot:before {
+    padding-left: 0.1em;
+  }
+}
+
+  </style>
+  
+  </head>
+  <body>
+  
+  <div id="resume">
+    	<header id="header" class="clear">
+    		<img class="image" src="https://avatars.githubusercontent.com/u/28717686?v&#x3D;4" alt="Milind Kumar Mishra" />
+    		<div class="middle">
+    			<h1 class="name">Milind Kumar Mishra</h1>
+    			<h2 class="label">Product Engineer</h2>
+    		</div>
     
-        
-      <section id="projects">
-        <h3>Projects</h3>
-        <div class="stack">
-          
-              <article>
-                <header>
-                  <h4><a href="https://airoadmapgenerator.com">AI Roadmap Generator</a></h4>
-                  <div class="meta">
-                    <div>
-                      
-                      
-                    </div>
-                     
-                  </div>
-                </header>
-                <p>Generates personalized learning roadmaps using Next.js, React, Canvas, and LLMs.</p>
-                
-                  <ul>
-                    <li><p>10,000+ visitors, recognized as 'Project of the Month' on Peerlist</p></li>
-                  </ul>
-                
-                
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://sideprojects.directory">Sideprojects Directory</a></h4>
-                  <div class="meta">
-                    <div>
-                      
-                      
-                    </div>
-                     
-                  </div>
-                </header>
-                <p>Showcases GitHub projects tagged with 'side-project', with auto-generated profiles.</p>
-                
-                  <ul>
-                    <li><p>Improved project visibility and collaboration opportunities</p></li>
-                  </ul>
-                
-                
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://jsonvisualiser.com">JSON Visualizer</a></h4>
-                  <div class="meta">
-                    <div>
-                      
-                      
-                    </div>
-                     
-                  </div>
-                </header>
-                <p>Tool to visualize JSON structures in tree and grid views.</p>
-                
-                  <ul>
-                    <li><p>Used by developers for better frontend integration and debugging</p></li>
-                  </ul>
-                
-                
-              </article>
-            
-        </div>
-      </section>
-      
-      <section id="certificates">
-        <h3>Certificates</h3>
-        <div class="stack">
-          
-              <article>
-                <header>
-                  <h4><a href="https://www.linkedin.com/learning/certificates/28f048356a91802cc20a3af01c9a034faa62ac7628a02631142d2eb78062a781">AI for React Developers</a></h4>
-                  <div class="meta">
-                    <div>Issued by <strong>LinkedIn Learning</strong></div> 
-                  </div>
-                </header>
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://www.linkedin.com/learning/certificates/bbb1d2307524475c1cc86d3c1dd77137a720dcc5f702ee1ee092d13354fa3c40">React: Design Patterns</a></h4>
-                  <div class="meta">
-                    <div>Issued by <strong>LinkedIn Learning</strong></div> 
-                  </div>
-                </header>
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://www.linkedin.com/learning/certificates/325849cd7c3d9fc599c2acd78c01b63df82246724b77e4425a89d0c8c92460f4">React: State Management</a></h4>
-                  <div class="meta">
-                    <div>Issued by <strong>LinkedIn Learning</strong></div> 
-                  </div>
-                </header>
-              </article>
-            
-        </div>
-      </section>
+    		<span class="location">
+    			<span class="address">Zolo Darren, BTM Layout,</span>
+    			<span class="postalCode">560034,</span>
+    			<span class="city">Bengaluru,</span>
+    			<span class="region">Karnataka</span>
+    			<span class="countryCode">(IN)</span>
+    		</span>
     
-         
+    
+    		<div id="contact">
+    			<div class="email">
+    				<span class="fa-regular fa-envelope"></span>
+    				<a class="hide-href-print" href="mailto:milindmishra4@gmail.com">milindmishra4@gmail.com</a>
+    			</div>
+    			<div class="phone">
+    				<span class="fa-solid fa-mobile-screen-button"></span>
+    				<a class="hide-href-print" href="tel:+919631333128">+919631333128</a>
+    			</div>
+    		</div>
+    
+    		<div id="profiles">
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa-brands fa-linkedin linkedin social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://linkedin.com/in/mishramilind"><span class="show-only-url-print">mishramilind</span></a>
+    					</span>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa-brands fa-github github social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://github.com/thatbeautifuldream"><span class="show-only-url-print">thatbeautifuldream</span></a>
+    					</span>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+    
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Skills</h2>
+      </header>
       <section id="skills">
-        <h3>Skills</h3>
-        <div class="grid-list">
-          
-              <div>
-                <h4>Web Development</h4>
-                
-                  <ul class="tag-list">
-                    <li>TypeScript</li><li>Next.js</li><li>Express.js</li><li>React</li><li>Cloud Services</li><li>Git</li><li>Docker</li>
-                  </ul>
-                
-              </div>
-            
-              <div>
-                <h4>Project & Ops</h4>
-                
-                  <ul class="tag-list">
-                    <li>Project Management</li><li>DevOps</li><li>User Experience (UX)</li>
-                  </ul>
-                
-              </div>
-            
+        <div class="item">
+          <h3 class="name">
+            Web Development
+          </h3>
+            <div class="level intermediate">
+                <em>Intermediate</em>
+              <div class="bar"></div>
+            </div>
+          <ul class="keywords">
+            <li>TypeScript</li>
+            <li>Next.js</li>
+            <li>Express.js</li>
+            <li>React</li>
+            <li>Cloud Services</li>
+            <li>Git</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Project &amp; Ops
+          </h3>
+            <div class="level intermediate">
+                <em>Intermediate</em>
+              <div class="bar"></div>
+            </div>
+          <ul class="keywords">
+            <li>Project Management</li>
+            <li>DevOps</li>
+            <li>User Experience (UX)</li>
+          </ul>
         </div>
       </section>
-     
-         
-      <section id="references">
-        <h3>References</h3>
-        <div class="stack">
-          
-              <blockquote>
-                <p>100% AGREE! Also, the way team has launched the project is commendable. This is by far the most successful project launch on Peerlist</p>
-                
-                  <p>
-                    <cite>Akash Bhadange</cite>
-                  </p>
-                
-              </blockquote>
-            
-        </div>
-      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Work Experience <span class="item-count">(9)</span></h2>
+      </header>
     
-      </body>
-    </html>
+      <section id="work">
+        <section class="work-item">
+    
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Feb 2025</span>
+                <span class="endDate">- Current</span>
+              </div>
+              <div class="position">Product Engineer</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Bengaluru, Karnataka, India
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://getmerlin.in">https://getmerlin.in</a>
+          </span>        <div class="item" id="work-item">
+            <ul class="highlights">
+              <li><p><p>Shipped UI for ChatGPT Imports enabling users to bring their chat history with ease to Merlin AI.</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Jan 2025</span>
+                <span class="endDate">- Feb 2025</span>
+              </div>
+              <div class="position">Software Engineer</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Bengaluru, Karnataka, India
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://getsaral.com">https://getsaral.com</a>
+          </span>        <div class="item" id="work-item">
+            <ul class="highlights">
+              <li><p><p>Shipped a revamped internal dashboard improving access to key metrics and reducing onboarding time.</p></p></li>
+              <li><p><p>Shipped multi-select drag-and-drop on relationship board for bulk operations.</p></p></li>
+              <li><p><p>Developed content submission system for influencers to streamline approvals.</p></p></li>
+              <li><p><p>Optimized influencer performance monitoring for campaign managers.</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Jun 2024</span>
+                <span class="endDate">- Dec 2024</span>
+              </div>
+              <div class="position">Founding Product Engineer</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Bengaluru, Karnataka, India
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://proofofskill.org">https://proofofskill.org</a>
+          </span>        <div class="item" id="work-item">
+            <ul class="highlights">
+              <li><p><p>Led MVP development for core workflows: Skill Validators, Candidates, Recruiters.</p></p></li>
+              <li><p><p>Integrated voting mechanism with consensus algorithm for validation fairness.</p></p></li>
+              <li><p><p>Built Candidate Flow: assessment recording, proctoring, cloud streaming.</p></p></li>
+              <li><p><p>Developed Recruiter Flow: skill heatmap generation and hiring insights.</p></p></li>
+              <li><p><p>Managed EC2, NGINX, PM2, and Next.js deployments for scale and availability.</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Feb 2024</span>
+                <span class="endDate">- May 2024</span>
+              </div>
+              <div class="position">Independent Contractor</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Bengaluru, Karnataka, India
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://milindmishra.com">https://milindmishra.com</a>
+          </span>        <div class="item" id="work-item">
+            <ul class="highlights">
+              <li><p><p>Built a platform for recruiter insights and candidate search.</p></p></li>
+              <li><p><p>Developed AI-powered quiz system using Vercel AI SDK, OpenAI, Fireworks AI.</p></p></li>
+              <li><p><p>Used Next.js for frontend with seamless AI integration.</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Aug 2023</span>
+                <span class="endDate">- Jan 2024</span>
+              </div>
+              <div class="position">Software Engineer</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Remote
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://www.linkedin.com/company/startuphire">https://www.linkedin.com/company/startuphire</a>
+          </span>        <div class="item" id="work-item">
+            <ul class="highlights">
+              <li><p><p>Led a team to prototype a recruiting pipeline.</p></p></li>
+              <li><p><p>Integrated multiple job boards for centralized job tracking.</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Feb 2023</span>
+                <span class="endDate">- Jul 2023</span>
+              </div>
+              <div class="position">Research Assistant</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Hsinchu, Taiwan
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://www.nycu.edu.tw/">https://www.nycu.edu.tw/</a>
+          </span>        <div class="item" id="work-item">
+            <ul class="highlights">
+              <li><p><p>Developed frontend for indoor positioning system with MQTT, IoT, UWB tech.</p></p></li>
+              <li><p><p>Implemented 3D visualization using React, GSAP, and Three.js.</p></p></li>
+              <li><p><p>Improved positioning accuracy from 20cm to under 10cm.</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Jul 2022</span>
+                <span class="endDate">- Jan 2023</span>
+              </div>
+              <div class="position">Software Engineer</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Hsinchu, Taiwan
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://www.locusconnect.com/">https://www.locusconnect.com/</a>
+          </span>        <div class="item" id="work-item">
+            <ul class="highlights">
+              <li><p><p>Built frontend for 3D indoor positioning platform.</p></p></li>
+              <li><p><p>Created and maintained marketing website.</p></p></li>
+              <li><p><p>Managed in-house infrastructure and Dockerized services.</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">May 2022</span>
+                <span class="endDate">- Jun 2022</span>
+              </div>
+              <div class="position">UX Designer</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Bengaluru, Karnataka, India
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://www.ineuron.ai/">https://www.ineuron.ai/</a>
+          </span>        <div class="item" id="work-item">
+            <ul class="highlights">
+              <li><p><p>Designed user flows and managed design system.</p></p></li>
+              <li><p><p>Created marketing posters and campaign assets.</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Jan 2022</span>
+                <span class="endDate">- Apr 2022</span>
+              </div>
+              <div class="position">Technical Writer</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Remote
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://www.plusklass.com/">https://www.plusklass.com/</a>
+          </span>        <div class="item" id="work-item">
+            <ul class="highlights">
+              <li><p><p>Developed comprehensive educational materials for HTML, CSS, JavaScript.</p></p></li>
+              <li><p><p>Created structured learning content for beginners.</p></p></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Projects <span class="item-count">(3)</span></h2>
+      </header>
+      <section id="projects">
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">AI Roadmap Generator</div>
+          </header>
+          <span class="website">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://airoadmapgenerator.com">https://airoadmapgenerator.com</a>
+          </span>
+          <div class="item">
+            <ul class="highlights">
+                <li><p><p>10,000+ visitors, recognized as 'Project of the Month' on Peerlist</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">Sideprojects Directory</div>
+          </header>
+          <span class="website">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://sideprojects.directory">https://sideprojects.directory</a>
+          </span>
+          <div class="item">
+            <ul class="highlights">
+                <li><p><p>Improved project visibility and collaboration opportunities</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">JSON Visualizer</div>
+          </header>
+          <span class="website">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://jsonvisualiser.com">https://jsonvisualiser.com</a>
+          </span>
+          <div class="item">
+            <ul class="highlights">
+                <li><p><p>Used by developers for better frontend integration and debugging</p></p></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
+      </header>
+    
+      <section id="education">
+        <section class="education-item">
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">
+              2023
+              </span>
+              <span class="endDate">
+              - 2023
+              </span>
+            </div>
+            <div class="header-left">
+              <div class="studyType">
+                Short Term Research Program
+              </div>
+              <div class="area">
+                Computer Software Engineering
+              </div>
+              <div class="institution">
+                National Yang Ming Chiao Tung University
+              </div>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+        <section class="education-item">
+          <header class="clear">
+            <div class="date">
+              <span class="endDate">
+              - 2022
+              </span>
+            </div>
+            <div class="header-left">
+              <div class="studyType">
+                Bachelor of Engineering
+              </div>
+              <div class="area">
+                Electronics and Communication
+              </div>
+              <div class="institution">
+                Visvesvaraya Technological University
+              </div>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+      </section>
+    </section>
+      <section class="section">
+        <header>
+          <h2 class="section-title">Certificates</h2>
+        </header>
+        <section id="certificates">
+            <section class="certificate-item">
+              <header class="clear">
+                <div class="header-left">
+                    <div class="name">
+                      AI for React Developers
+                    </div>
+                    <div class="issuer">
+                      LinkedIn Learning
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fa-solid fa-up-right-from-square"></span>
+                    <a target="_blank" href="https://www.linkedin.com/learning/certificates/28f048356a91802cc20a3af01c9a034faa62ac7628a02631142d2eb78062a781">https://www.linkedin.com/learning/certificates/28f048356a91802cc20a3af01c9a034faa62ac7628a02631142d2eb78062a781</a>
+                  </span>
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                <div class="header-left">
+                    <div class="name">
+                      React: Design Patterns
+                    </div>
+                    <div class="issuer">
+                      LinkedIn Learning
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fa-solid fa-up-right-from-square"></span>
+                    <a target="_blank" href="https://www.linkedin.com/learning/certificates/bbb1d2307524475c1cc86d3c1dd77137a720dcc5f702ee1ee092d13354fa3c40">https://www.linkedin.com/learning/certificates/bbb1d2307524475c1cc86d3c1dd77137a720dcc5f702ee1ee092d13354fa3c40</a>
+                  </span>
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                <div class="header-left">
+                    <div class="name">
+                      React: State Management
+                    </div>
+                    <div class="issuer">
+                      LinkedIn Learning
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fa-solid fa-up-right-from-square"></span>
+                    <a target="_blank" href="https://www.linkedin.com/learning/certificates/325849cd7c3d9fc599c2acd78c01b63df82246724b77e4425a89d0c8c92460f4">https://www.linkedin.com/learning/certificates/325849cd7c3d9fc599c2acd78c01b63df82246724b77e4425a89d0c8c92460f4</a>
+                  </span>
+              </div>
+            </section>
+        </section>
+      </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>References</h2>
+      </header>
+      <section id="references">
+        <div class="item">
+          <blockquote class="reference">
+            &#8220;&#32;100% AGREE! Also, the way team has launched the project is commendable. This is by far the most successful project launch on Peerlist&#32;&#8221;
+          </blockquote>
+          <div class="name">
+            Akash Bhadange
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </body>
+</html>
