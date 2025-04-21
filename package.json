@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "prepare:json": "ts-node scripts/generate-resume.ts",
-    "generate:html": "resumed render resume.json --theme @jsonresume/jsonresume-theme-professional",
+    "generate:html": "resumed render resume.json",
     "generate:resume": "pnpm run prepare:json && pnpm run generate:html"
   },
   "keywords": [

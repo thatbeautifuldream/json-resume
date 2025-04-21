@@ -1,6 +1,6 @@
 {
   "meta": {
-    "theme": "professional",
+    "theme": "jsonresume-theme-even",
     "themeOptions": {
       "colors": {
         "background": [
@@ -29,7 +29,7 @@
   "basics": {
     "name": "Milind Kumar Mishra",
     "label": "Product Engineer",
-    "image": "https://s.gravatar.com/avatar/3ed8e1450370f9ab462b1c5b34caef9e?s=100&r=pg&d=mm",
+    "image": "https://avatars.githubusercontent.com/u/28717686?v=4",
     "email": "milindmishra4@gmail.com",
     "phone": "+919631333128",
     "url": "https://milindmishra.com",

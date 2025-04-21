@@ -2,7 +2,7 @@ import type { TResumeSchema } from "./resume.schema";
 
 export const resumeData: TResumeSchema = {
   meta: {
-    theme: "professional",
+    theme: "jsonresume-theme-even",
     themeOptions: {
       colors: {
         background: ["#ffffff", "#000000"],
