@@ -16,14 +16,13 @@ export const resumeData: TResumeSchema = {
   basics: {
     name: "Milind Kumar Mishra",
     label: "Product Engineer",
-    image:
-      "https://s.gravatar.com/avatar/3ed8e1450370f9ab462b1c5b34caef9e?s=100&r=pg&d=mm",
+    image: "https://avatars.githubusercontent.com/u/28717686?v=4",
     email: "milindmishra4@gmail.com",
     phone: "+919631333128",
     url: "https://milindmishra.com",
     location: {
-      address: "",
-      postalCode: "",
+      address: "Zolo Darren, BTM Layout",
+      postalCode: "560034",
       city: "Bengaluru",
       countryCode: "IN",
       region: "Karnataka",
@@ -48,7 +47,6 @@ export const resumeData: TResumeSchema = {
       url: "https://getmerlin.in",
       startDate: "2025-02-01",
       location: "Bengaluru, Karnataka, India",
-      summary: "",
       highlights: [
         "Shipped UI for ChatGPT Imports enabling users to bring their chat history with ease to Merlin AI.",
       ],
@@ -60,7 +58,6 @@ export const resumeData: TResumeSchema = {
       startDate: "2025-01-01",
       endDate: "2025-02-01",
       location: "Bengaluru, Karnataka, India",
-      summary: "",
       highlights: [
         "Shipped a revamped internal dashboard improving access to key metrics and reducing onboarding time.",
         "Shipped multi-select drag-and-drop on relationship board for bulk operations.",
@@ -75,7 +72,6 @@ export const resumeData: TResumeSchema = {
       startDate: "2024-06-01",
       endDate: "2024-12-31",
       location: "Bengaluru, Karnataka, India",
-      summary: "",
       highlights: [
         "Led MVP development for core workflows: Skill Validators, Candidates, Recruiters.",
         "Integrated voting mechanism with consensus algorithm for validation fairness.",
@@ -91,7 +87,6 @@ export const resumeData: TResumeSchema = {
       startDate: "2024-02-01",
       endDate: "2024-05-31",
       location: "Bengaluru, Karnataka, India",
-      summary: "",
       highlights: [
         "Built a platform for recruiter insights and candidate search.",
         "Developed AI-powered quiz system using Vercel AI SDK, OpenAI, Fireworks AI.",
@@ -105,7 +100,6 @@ export const resumeData: TResumeSchema = {
       startDate: "2023-08-01",
       endDate: "2024-01-31",
       location: "Remote",
-      summary: "",
       highlights: [
         "Led a team to prototype a recruiting pipeline.",
         "Integrated multiple job boards for centralized job tracking.",
@@ -117,7 +111,6 @@ export const resumeData: TResumeSchema = {
       startDate: "2023-02-01",
       endDate: "2023-07-31",
       location: "Hsinchu, Taiwan",
-      summary: "",
       highlights: [
         "Developed frontend for indoor positioning system with MQTT, IoT, UWB tech.",
         "Implemented 3D visualization using React, GSAP, and Three.js.",
@@ -130,7 +123,6 @@ export const resumeData: TResumeSchema = {
       startDate: "2022-07-01",
       endDate: "2023-01-31",
       location: "Hsinchu, Taiwan",
-      summary: "",
       highlights: [
         "Built frontend for 3D indoor positioning platform.",
         "Created and maintained marketing website.",
@@ -143,7 +135,6 @@ export const resumeData: TResumeSchema = {
       startDate: "2022-05-01",
       endDate: "2022-06-30",
       location: "Bengaluru, Karnataka, India",
-      summary: "",
       highlights: [
         "Designed user flows and managed design system.",
         "Created marketing posters and campaign assets.",
@@ -155,7 +146,6 @@ export const resumeData: TResumeSchema = {
       startDate: "2022-01-01",
       endDate: "2022-04-30",
       location: "Remote",
-      summary: "",
       highlights: [
         "Developed comprehensive educational materials for HTML, CSS, JavaScript.",
         "Created structured learning content for beginners.",
@@ -170,16 +160,12 @@ export const resumeData: TResumeSchema = {
       studyType: "Short Term Research Program",
       startDate: "2023-02-01",
       endDate: "2023-07-31",
-      score: "",
-      courses: [],
     },
     {
       institution: "Visvesvaraya Technological University",
       area: "Electronics and Communication",
       studyType: "Bachelor of Engineering",
       endDate: "2022-01-01",
-      score: "",
-      courses: [],
     },
   ],
   certificates: [

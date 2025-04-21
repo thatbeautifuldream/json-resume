@@ -5,9 +5,9 @@
   "description": "Resume following JSON Resume Schema",
   "main": "index.js",
   "scripts": {
-    "render:html": "resumed render resume.json --theme jsonresume-theme-even",
-    "generate:json": "ts-node scripts/generate-resume.ts",
-    "build:resume": "pnpm run generate:json && pnpm run render:html"
+    "prepare:json": "ts-node scripts/generate-resume.ts",
+    "generate:html": "resumed render resume.json --theme @jsonresume/jsonresume-theme-professional",
+    "generate:resume": "pnpm run prepare:json && pnpm run generate:html"
   },
   "keywords": [
     "json-resume",

@@ -34,8 +34,8 @@
     "phone": "+919631333128",
     "url": "https://milindmishra.com",
     "location": {
-      "address": "",
-      "postalCode": "",
+      "address": "Zolo Darren, BTM Layout",
+      "postalCode": "560034",
       "city": "Bengaluru",
       "countryCode": "IN",
       "region": "Karnataka"
@@ -60,7 +60,6 @@
       "position": "Product Engineer",
       "url": "https://getmerlin.in",
       "startDate": "2025-02-01",
-      "summary": "",
       "highlights": [
         "Shipped UI for ChatGPT Imports enabling users to bring their chat history with ease to Merlin AI."
       ]
@@ -72,7 +71,6 @@
       "url": "https://getsaral.com",
       "startDate": "2025-01-01",
       "endDate": "2025-02-01",
-      "summary": "",
       "highlights": [
         "Shipped a revamped internal dashboard improving access to key metrics and reducing onboarding time.",
         "Shipped multi-select drag-and-drop on relationship board for bulk operations.",
@@ -87,7 +85,6 @@
       "url": "https://proofofskill.org",
       "startDate": "2024-06-01",
       "endDate": "2024-12-31",
-      "summary": "",
       "highlights": [
         "Led MVP development for core workflows: Skill Validators, Candidates, Recruiters.",
         "Integrated voting mechanism with consensus algorithm for validation fairness.",
@@ -103,7 +100,6 @@
       "url": "https://milindmishra.com",
       "startDate": "2024-02-01",
       "endDate": "2024-05-31",
-      "summary": "",
       "highlights": [
         "Built a platform for recruiter insights and candidate search.",
         "Developed AI-powered quiz system using Vercel AI SDK, OpenAI, Fireworks AI.",
@@ -117,7 +113,6 @@
       "url": "https://www.linkedin.com/company/startuphire",
       "startDate": "2023-08-01",
       "endDate": "2024-01-31",
-      "summary": "",
       "highlights": [
         "Led a team to prototype a recruiting pipeline.",
         "Integrated multiple job boards for centralized job tracking."
@@ -129,7 +124,6 @@
       "position": "Research Assistant",
       "startDate": "2023-02-01",
       "endDate": "2023-07-31",
-      "summary": "",
       "highlights": [
         "Developed frontend for indoor positioning system with MQTT, IoT, UWB tech.",
         "Implemented 3D visualization using React, GSAP, and Three.js.",
@@ -142,7 +136,6 @@
       "position": "Software Engineer",
       "startDate": "2022-07-01",
       "endDate": "2023-01-31",
-      "summary": "",
       "highlights": [
         "Built frontend for 3D indoor positioning platform.",
         "Created and maintained marketing website.",
@@ -155,7 +148,6 @@
       "position": "UX Designer",
       "startDate": "2022-05-01",
       "endDate": "2022-06-30",
-      "summary": "",
       "highlights": [
         "Designed user flows and managed design system.",
         "Created marketing posters and campaign assets."
@@ -167,7 +159,6 @@
       "position": "Technical Writer",
       "startDate": "2022-01-01",
       "endDate": "2022-04-30",
-      "summary": "",
       "highlights": [
         "Developed comprehensive educational materials for HTML, CSS, JavaScript.",
         "Created structured learning content for beginners."
@@ -181,17 +172,13 @@
       "area": "Computer Software Engineering",
       "studyType": "Short Term Research Program",
       "startDate": "2023-02-01",
-      "endDate": "2023-07-31",
-      "score": "",
-      "courses": []
+      "endDate": "2023-07-31"
     },
     {
       "institution": "Visvesvaraya Technological University",
       "area": "Electronics and Communication",
       "studyType": "Bachelor of Engineering",
-      "endDate": "2022-01-01",
-      "score": "",
-      "courses": []
+      "endDate": "2022-01-01"
     }
   ],
   "certificates": [
