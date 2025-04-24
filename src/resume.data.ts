@@ -39,6 +39,9 @@ export const resumeData: TResumeSchema = {
       location: "Bengaluru, Karnataka, India",
       highlights: [
         "Shipped UI for ChatGPT Imports enabling users to bring their chat history with ease to Merlin AI.",
+        "Shipped pages for chat history flow including project chats.",
+        "Revamped AI Model Selector.",
+        "Working on Prompt Enhancement feature for merlin chat input from streaming backend to managing stream on the frontend.",
       ],
     },
     {
