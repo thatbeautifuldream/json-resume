@@ -7,7 +7,6 @@ export const resumeData: TResumeSchema = {
   basics: {
     name: "Milind Kumar Mishra",
     label: "Product Engineer",
-    image: "https://avatars.githubusercontent.com/u/28717686?v=4",
     email: "milindmishra4@gmail.com",
     phone: "+919631333128",
     url: "https://milindmishra.com",
