@@ -58,8 +58,8 @@ const WorkSchema = z.object({
   description: z.string().optional(), // Added field
   position: z.string().optional(),
   url: z.string().url().optional(),
-  startDate: iso8601DateSchema, // Use custom date schema
-  endDate: iso8601DateSchema, // Use custom date schema
+  startDate: iso8601DateSchema,
+  endDate: iso8601DateSchema,
   summary: z.string().optional(), // Describe responsibilities
   highlights: z.array(z.string()).optional(), // List accomplishments
 });
@@ -79,13 +79,12 @@ const EducationSchema = z.object({
   url: z.string().url().optional(),
   area: z.string().optional(), // e.g., "Computer Science"
   studyType: z.string().optional(), // e.g., "Bachelor", "Master"
-  startDate: iso8601DateSchema, // Use custom date schema
-  endDate: iso8601DateSchema, // Use custom date schema
+  startDate: iso8601DateSchema,
+  endDate: iso8601DateSchema,
   score: z.string().optional(), // e.g., "3.8/4.0 GPA"
   courses: z.array(z.string()).optional(), // Relevant courses
 });
 
-// Added Awards Schema
 const AwardsSchema = z.object({
   title: z.string().optional(),
   date: iso8601DateSchema,
@@ -95,12 +94,11 @@ const AwardsSchema = z.object({
 
 const CertificateSchema = z.object({
   name: z.string().optional(),
-  date: iso8601DateSchema, // Use custom date schema
+  date: iso8601DateSchema,
   issuer: z.string().optional(),
   url: z.string().url().optional(),
 });
 
-// Added Publications Schema
 const PublicationsSchema = z.object({
   name: z.string().optional(),
   publisher: z.string().optional(),
@@ -115,13 +113,11 @@ const SkillSchema = z.object({
   keywords: z.array(z.string()).optional(), // Specific skills/tools
 });
 
-// Added Languages Schema
 const LanguagesSchema = z.object({
   language: z.string().optional(),
   fluency: z.string().optional(), // e.g., 'Native speaker', 'Fluent', 'Beginner'
 });
 
-// Added Interests Schema
 const InterestsSchema = z.object({
   name: z.string().optional(),
   keywords: z.array(z.string()).optional(),
@@ -132,8 +128,8 @@ const ProjectSchema = z.object({
   description: z.string().optional(),
   highlights: z.array(z.string()).optional(),
   keywords: z.array(z.string()).optional(),
-  startDate: iso8601DateSchema, // Use custom date schema
-  endDate: iso8601DateSchema, // Use custom date schema
+  startDate: iso8601DateSchema,
+  endDate: iso8601DateSchema,
   url: z.string().url().optional(),
   roles: z.array(z.string()).optional(),
   entity: z.string().optional(), // e.g., "Independent", "Company X"

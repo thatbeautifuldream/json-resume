@@ -161,6 +161,7 @@ export const resumeData: TResumeSchema = {
       area: "Electronics and Communication",
       url: "https://www.vtu.ac.in/",
       studyType: "Bachelor of Engineering",
+      startDate: "2018-08-01",
       endDate: "2022-01-01",
     },
   ],
