@@ -191,18 +191,42 @@
         "Next.js",
         "Express.js",
         "React",
-        "Cloud Services",
         "Git",
-        "Docker"
+        "Docker",
+        "REST APIs",
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "level": "Beginner",
+      "keywords": [
+        "Cloud Services (AWS, GCP)",
+        "Storage",
+        "CDNs",
+        "CI/CD",
+        "Docker",
+        "Monitoring Tools"
+      ]
+    },
+    {
+      "name": "Design",
+      "level": "Beginner",
+      "keywords": [
+        "Figma",
+        "User Experience (UX)",
+        "UI Design",
+        "Prototyping",
+        "Wireframing"
       ]
     },
     {
       "name": "Project & Ops",
-      "level": "Intermediate",
+      "level": "Beginner",
       "keywords": [
         "Project Management",
-        "DevOps",
-        "User Experience (UX)"
+        "Team Collaboration"
       ]
     }
   ],
