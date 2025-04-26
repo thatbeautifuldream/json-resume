@@ -1,4 +1,4 @@
-import type { TResumeSchema } from "./resume.schema";
+import type { TResumeSchema } from "@thatbeautifuldream/milind-resume";
 
 export const resumeData: TResumeSchema = {
   meta: {

@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 import { resumeData } from "../src/resume.data.ts";
-import { ResumeZodSchema } from "../src/resume.schema.ts";
+import { ResumeZodSchema } from "@thatbeautifuldream/milind-resume";
 import { ZodError } from "zod";
 
 const __filename = fileURLToPath(import.meta.url);
