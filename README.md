@@ -46,23 +46,13 @@
 
     This validates the data using the Zod schema and outputs `resume.json`.
 
-3.  **Render HTML:**
+3.  **View or Deploy:**
 
-    ```bash
-    pnpm run render
-    # or npm run render
-    ```
-
-    This invokes `resumed render resume.json --theme jsonresume-theme-even` using the generated JSON file.
-
-4.  **View or Deploy:**
-
-    Open or deploy `resume.html` anywhere (GitHub Pages, S3, your personal site, etc.)
+    Open or deploy `resume.html` anywhere (GitHub Pages, S3, Vercel, Netlify, your personal site, etc.)
 
 ## Benefits
 
 - Keep your résumé source strongly-typed and validated using TypeScript and Zod
 - Maintain data in a more developer-friendly format (`.ts`)
 - Instantly regenerate a consistent, themeable HTML whenever you update your data
-- Swap in new JSON Resume themes without touching your content
 - Automatically generate the standard `resume.json` for compatibility with other tools
