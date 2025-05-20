@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@thatbeautifuldream/milind-resume':
-        specifier: ^1.0.0
-        version: 1.0.0
       jsonresume-theme-stackoverflow:
         specifier: ^2.1.0
         version: 2.1.0
@@ -186,9 +183,6 @@ packages:
   '@jsonresume/schema@1.2.1':
     resolution: {integrity: sha512-kcst3WFNz+ACZnazWSHgI8hiooSuBH/j+TdduJ6LqMEoE+Kni1wDbrINkAzTR72D+gc1GEG4I/HRTqoa5dMJiA==}
     engines: {node: '>=20'}
-
-  '@thatbeautifuldream/milind-resume@1.0.0':
-    resolution: {integrity: sha512-4CDeTECrx/zhkDA6CDencN4V6FP9v3Xg0iyk1NR6D0MnHwcltdyE1qUeapUhrppbUWZboLVHb8dxa05+XJ7TBw==}
 
   '@types/node@22.14.1':
     resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
@@ -383,10 +377,6 @@ snapshots:
   '@jsonresume/schema@1.2.1':
     dependencies:
       jsonschema: 1.5.0
-
-  '@thatbeautifuldream/milind-resume@1.0.0':
-    dependencies:
-      zod: 3.24.3
 
   '@types/node@22.14.1':
     dependencies:
