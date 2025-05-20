@@ -169,6 +169,16 @@ export const resumeData: TResumeSchema = {
   ],
   certificates: [
     {
+      name: "Next.js App Router Fundamentals",
+      issuer: "Vercel",
+      url: "https://nextjs.org/learn/certificate?course=dashboard-app&user=48654&certId=dashboard-app-48654-1745867386592",
+    },
+    {
+      name: "Animations on the Web",
+      issuer: "animations.dev",
+      url: "https://animations.dev/certificate/3c66d48d-0d7a-4865-b023-e06ddfd71971",
+    },
+    {
       name: "AI for React Developers",
       issuer: "LinkedIn Learning",
       url: "https://www.linkedin.com/learning/certificates/28f048356a91802cc20a3af01c9a034faa62ac7628a02631142d2eb78062a781",
@@ -182,6 +192,11 @@ export const resumeData: TResumeSchema = {
       name: "React: State Management",
       issuer: "LinkedIn Learning",
       url: "https://www.linkedin.com/learning/certificates/325849cd7c3d9fc599c2acd78c01b63df82246724b77e4425a89d0c8c92460f4",
+    },
+    {
+      name: "React (Basic)",
+      issuer: "HackerRank",
+      url: "https://www.hackerrank.com/certificates/57ce647802bb",
     },
   ],
   skills: [
