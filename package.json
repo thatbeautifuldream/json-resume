@@ -5,9 +5,9 @@
   "description": "Resume following JSON Resume Schema",
   "main": "index.js",
   "scripts": {
-    "prepare:json": "tsx scripts/generate-resume",
-    "generate:html": "resumed render resume.json",
-    "generate:resume": "pnpm run prepare:json && pnpm run generate:html",
+    "prepare:json": "tsx scripts/prepare-resume-json",
+    "prepare:html": "resumed render resume.json",
+    "prepare:resume": "pnpm run prepare:json && pnpm run prepare:html",
     "prepare": "husky"
   },
   "keywords": [

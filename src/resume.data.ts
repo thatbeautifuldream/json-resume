@@ -1,4 +1,4 @@
-import type { TResumeSchema } from "@thatbeautifuldream/milind-resume";
+import { TResumeSchema } from "./resume.schema";
 
 export const resumeData: TResumeSchema = {
   meta: {
@@ -270,6 +270,24 @@ export const resumeData: TResumeSchema = {
         "Used by developers for better frontend integration and debugging",
       ],
       url: "https://jsonvisualiser.com",
+    },
+  ],
+  talks: [
+    {
+      event: "React Play x React Bangalore Meetup",
+      date: "2025-05-17",
+      title: "Building Real-Time Applications with Reactive Databases",
+      website: "https://www.meetup.com/reactplay-bengaluru/events/307690438/",
+      slides: "https://milindmishra.com/slide/building-realtime-applications-with-reactive-databases",
+      summary: "Real-time applications with React and Convex.",
+    },
+    {
+      event: "React Bangalore Meetup",
+      date: "2025-04-12",
+      title: "AI for React Developers",
+      website: "https://www.meetup.com/reactjs-bangalore/events/306320480/",
+      slides: "https://milindmishra.com/slide/ai-for-react-developers",
+      summary: "A deep-dive into Vercel's AI SDK.",
     },
   ],
   references: [
