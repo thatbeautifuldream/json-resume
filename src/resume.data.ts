@@ -28,6 +28,11 @@ export const resumeData: TResumeSchema = {
         username: "thatbeautifuldream",
         url: "https://github.com/thatbeautifuldream",
       },
+      {
+        network: "X",
+        username: "milindmishra_",
+        url: "https://x.com/milindmishra_",
+      },
     ],
   },
   work: [
@@ -278,7 +283,8 @@ export const resumeData: TResumeSchema = {
       date: "2025-05-17",
       title: "Building Real-Time Applications with Reactive Databases",
       website: "https://www.meetup.com/reactplay-bengaluru/events/307690438/",
-      slides: "https://milindmishra.com/slide/building-realtime-applications-with-reactive-databases",
+      slides:
+        "https://milindmishra.com/slide/building-realtime-applications-with-reactive-databases",
       summary: "Real-time applications with React and Convex.",
     },
     {
