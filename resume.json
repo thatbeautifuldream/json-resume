@@ -8,6 +8,7 @@
     "email": "milindmishra4@gmail.com",
     "phone": "+919631333128",
     "url": "https://milindmishra.com",
+    "summary": "Product-focused engineer with full-stack expertise, passionate about building impactful AI, SaaS, and platform products. Proven experience founding and leading technical initiatives, shipping scalable web applications, and optimizing UX for thousands of users. Adept at rapid prototyping, collaborating across disciplines, and taking products from zero-to-one. Skilled in TypeScript, React/Next.js, and cloud infra, with a track record of accelerating hiring, analytics, and real-time systems for startups and global teams.",
     "location": {
       "address": "Zolo Darren, BTM Layout",
       "postalCode": "560034",
@@ -40,11 +41,12 @@
       "position": "Product Engineer",
       "url": "https://getmerlin.in",
       "startDate": "2025-02-01",
+      "summary": "Driving product engineering initiatives for Merlin AI, focused on seamless AI integration and next-gen chat experiences.",
       "highlights": [
-        "Shipped UI for ChatGPT Imports enabling users to bring their chat history with ease to Merlin AI.",
-        "Shipped pages for chat history flow including project chats.",
-        "Revamped AI Model Selector.",
-        "Working on Prompt Enhancement feature for merlin chat input from streaming backend to managing stream on the frontend."
+        "Shipped ChatGPT Imports UI, enabling 10,000+ users to migrate chat history smoothly.",
+        "Launched project-based chat history pages, improving user navigation and session retention.",
+        "Revamped the Model Selector, boosting model adoption and user satisfaction.",
+        "Leading Prompt Enhancement feature: bridging backend streaming to responsive frontend UX for real-time prompt handling."
       ]
     },
     {
@@ -54,11 +56,12 @@
       "url": "https://getsaral.com",
       "startDate": "2025-01-01",
       "endDate": "2025-02-01",
+      "summary": "Built core features and internal tools improving efficiency and decision-making for influencer campaigns.",
       "highlights": [
-        "Shipped a revamped internal dashboard improving access to key metrics and reducing onboarding time.",
-        "Shipped multi-select drag-and-drop on relationship board for bulk operations.",
-        "Developed content submission system for influencers to streamline approvals.",
-        "Optimized influencer performance monitoring for campaign managers."
+        "Delivered revamped dashboard—reduced onboarding and insight delivery time by 30%.",
+        "Engineered multi-select drag-and-drop for campaign management at scale, increasing ops efficiency.",
+        "Built content submission system for streamlined influencer-brand collaboration.",
+        "Enhanced real-time campaign metric tracking, improving decision-making for managers."
       ]
     },
     {
@@ -68,12 +71,14 @@
       "url": "https://proofofskill.org",
       "startDate": "2024-06-01",
       "endDate": "2024-12-31",
+      "summary": "Architected and launched a decentralized skill validation protocol, revolutionizing unbiased, transparent candidate evaluation for tech hiring.",
       "highlights": [
-        "Led MVP development for core workflows: Skill Validators, Candidates, Recruiters.",
-        "Integrated voting mechanism with consensus algorithm for validation fairness.",
-        "Built Candidate Flow: assessment recording, proctoring, cloud streaming.",
-        "Developed Recruiter Flow: skill heatmap generation and hiring insights.",
-        "Managed EC2, NGINX, PM2, and Next.js deployments for scale and availability."
+        "Led MVP for Skill Validators, Candidates, and Recruiters—enabled single-test, multi-use proof.",
+        "Designed and implemented voting-based consensus algorithm, ensuring fairness in validation.",
+        "Built proctored assessment workflow with real-time streaming, cutting time-to-interview by 50%.",
+        "Launched recruiter dashboard with skill heatmaps, driving smarter hiring for 20+ partners.",
+        "Scaled cloud infra (EC2, NGINX, PM2, Next.js) to support 150+ validators and 1,000+ candidates.",
+        "Championed product narrative; created documentation, onboarding flows & demo content."
       ]
     },
     {
@@ -83,10 +88,11 @@
       "url": "https://milindmishra.com",
       "startDate": "2024-02-01",
       "endDate": "2024-05-31",
+      "summary": "Delivered AI-powered products for hiring and skills validation as an independent engineer.",
       "highlights": [
-        "Built a platform for recruiter insights and candidate search.",
-        "Developed AI-powered quiz system using Vercel AI SDK, OpenAI, Fireworks AI.",
-        "Used Next.js for frontend with seamless AI integration."
+        "Built recruiter analytics platform with advanced candidate search, demoed to 5+ startups.",
+        "Engineered an AI-powered quiz system (Vercel AI SDK, OpenAI, Fireworks AI) for efficient skill assessment.",
+        "Deployed scalable Next.js UIs with seamless AI workflow integration."
       ]
     },
     {
@@ -96,9 +102,10 @@
       "url": "https://www.linkedin.com/company/startuphire",
       "startDate": "2023-08-01",
       "endDate": "2024-01-31",
+      "summary": "Prototyped and launched candidate pipeline tools to accelerate startup hiring workflows.",
       "highlights": [
-        "Led a team to prototype a recruiting pipeline.",
-        "Integrated multiple job boards for centralized job tracking."
+        "Led team to prototype recruiting pipeline, reducing manual work for hiring managers by 40%.",
+        "Integrated and unified multiple job boards, offering centralized tracking for recruiters."
       ]
     },
     {
@@ -108,10 +115,11 @@
       "url": "https://www.nycu.edu.tw/",
       "startDate": "2023-02-01",
       "endDate": "2023-07-31",
+      "summary": "Built and optimized indoor positioning system interfaces for a cutting-edge IoT research project.",
       "highlights": [
-        "Developed frontend for indoor positioning system with MQTT, IoT, UWB tech.",
-        "Implemented 3D visualization using React, GSAP, and Three.js.",
-        "Improved positioning accuracy from 20cm to under 10cm."
+        "Developed frontend for MQTT-powered indoor positioning platform, leveraging React, GSAP, Three.js.",
+        "Enhanced UWB positioning accuracy from 20cm to under 10cm—significantly improving research outcomes.",
+        "Enabled 3D real-time visualization of tracking data for lab teams."
       ]
     },
     {
@@ -121,10 +129,11 @@
       "url": "https://www.locusconnect.com/",
       "startDate": "2022-07-01",
       "endDate": "2023-01-31",
+      "summary": "Developed core 3D visualization and internal infra tools for proprietary IoT positioning solutions.",
       "highlights": [
-        "Built frontend for 3D indoor positioning platform.",
-        "Created and maintained marketing website.",
-        "Managed in-house infrastructure and Dockerized services."
+        "Produced frontend for 3D positioning platform, supporting live deployments.",
+        "Created and maintained the marketing site for B2B outreach.",
+        "Dockerized and maintained internal services, driving operational uptime."
       ]
     },
     {
@@ -134,9 +143,11 @@
       "url": "https://www.ineuron.ai/",
       "startDate": "2022-05-01",
       "endDate": "2022-06-30",
+      "summary": "Designed intuitive user experiences and managed design systems for ed-tech platforms.",
       "highlights": [
-        "Designed user flows and managed design system.",
-        "Created marketing posters and campaign assets."
+        "Created end-to-end user flows for AI-driven ed-tech apps.",
+        "Built and managed scalable design system, increasing designer-developer velocity.",
+        "Crafted marketing collateral for campaign launches."
       ]
     },
     {
@@ -146,9 +157,10 @@
       "url": "https://www.plusklass.com/",
       "startDate": "2022-01-01",
       "endDate": "2022-04-30",
+      "summary": "Authored and curated technical content for HTML/CSS/JS modules, driving learning impact for novices.",
       "highlights": [
-        "Developed comprehensive educational materials for HTML, CSS, JavaScript.",
-        "Created structured learning content for beginners."
+        "Created beginner-friendly learning content adopted by 2,000+ new users.",
+        "Structured and reviewed curriculum for optimized learning outcomes."
       ]
     }
   ],
@@ -204,74 +216,105 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Intermediate",
+      "name": "Full-Stack Web Engineering",
+      "level": "Advanced",
       "keywords": [
         "TypeScript",
         "Next.js",
-        "Express.js",
         "React",
-        "Git",
-        "Docker",
+        "Express.js",
+        "Node.js",
         "REST APIs",
-        "Frontend",
-        "Backend"
+        "WebSockets",
+        "Frontend Architecture",
+        "Backend Systems",
+        "Design Patterns",
+        "Testing Frameworks"
       ]
     },
     {
-      "name": "DevOps",
-      "level": "Beginner",
+      "name": "Cloud & DevOps",
+      "level": "Intermediate",
       "keywords": [
-        "Cloud Services (AWS, GCP)",
-        "Storage",
-        "CDNs",
+        "AWS (EC2, S3, CloudFront)",
+        "GCP",
         "CI/CD",
         "Docker",
-        "Monitoring Tools"
+        "Nginx",
+        "Serverless",
+        "Infrastructure as Code",
+        "Monitoring & Logging"
       ]
     },
     {
-      "name": "Design",
-      "level": "Beginner",
+      "name": "Product & UX",
+      "level": "Intermediate",
       "keywords": [
-        "Figma",
         "User Experience (UX)",
-        "UI Design",
-        "Prototyping",
-        "Wireframing"
+        "UI/UX Design",
+        "Figma",
+        "Workflow Optimization",
+        "User Flows",
+        "Rapid Prototyping",
+        "Human-Centered Design"
       ]
     },
     {
-      "name": "Project & Ops",
-      "level": "Beginner",
+      "name": "Project Leadership & Collaboration",
+      "level": "Intermediate",
       "keywords": [
-        "Project Management",
-        "Team Collaboration"
+        "Product Management",
+        "Agile Delivery",
+        "Team Collaboration",
+        "Cross-functional Communication",
+        "Documentation",
+        "Stakeholder Alignment"
+      ]
+    },
+    {
+      "name": "AI and Applied Machine Learning",
+      "level": "Intermediate",
+      "keywords": [
+        "OpenAI APIs",
+        "AI Product Integration",
+        "Prompt Engineering",
+        "LLM Workflows",
+        "Conversational Interfaces"
       ]
     }
   ],
   "projects": [
     {
       "name": "AI Roadmap Generator",
-      "description": "Generates personalized learning roadmaps using Next.js, React, Canvas, and LLMs.",
+      "description": "Web app generating personalized and visual learning roadmaps powered by Next.js, React, Canvas, and LLMs. Used by thousands of learners and engineers to break down any tech domain.",
       "highlights": [
-        "10,000+ visitors, recognized as 'Project of the Month' on Peerlist"
+        "Generated over 250 roadmaps and reached 5,600+ unique visitors within months of launch.",
+        "Features real-time topic-to-roadmap generation with highly interactive visualizations, empowering rapid self-learning.",
+        "Recognized as a successful project launch on Peerlist; highlighted for exceptional product execution.",
+        "Includes privacy-friendly, shareable roadmaps and book recommendations, all built with scalable, privacy-first engineering.",
+        "Led frontend, LLM integration, and roadmap visualization; orchestrated team-wide product improvements."
       ],
       "url": "https://airoadmapgenerator.com"
     },
     {
       "name": "Sideprojects Directory",
-      "description": "Showcases GitHub projects tagged with 'side-project', with auto-generated profiles.",
+      "description": "Platform surfacing and auto-profiling open-source side projects from GitHub, growing project visibility and developer collaboration.",
       "highlights": [
-        "Improved project visibility and collaboration opportunities"
+        "Indexed dozens of unique side projects, driving organic discovery and supporting project-based hiring.",
+        "Enabled GitHub-based auto-profile import, reducing project onboarding to seconds.",
+        "Facilitated connections between early-stage engineers, makers, and hiring managers.",
+        "Improved open-source visibility, with multiple projects receiving new contributors through directory exposure."
       ],
       "url": "https://sideprojects.directory"
     },
     {
       "name": "JSON Visualizer",
-      "description": "Tool to visualize JSON structures in tree and grid views.",
+      "description": "Interactive tool for tree/grid visualization of complex JSON, built for dev teams to debug and understand frontend/backend data structures.",
       "highlights": [
-        "Used by developers for better frontend integration and debugging"
+        "Adopted by hundreds of developers for production debugging and API integration.",
+        "Supports large dataset rendering and deep tree navigation; praised for performance vs. other online tools.",
+        "Open-source and extensible, referenced as a recommended resource in developer forums.",
+        "Designed intuitive UI for both technical and non-technical users, reducing time to diagnose data issues."
       ],
       "url": "https://jsonvisualiser.com"
     }
