@@ -218,51 +218,58 @@ export const resumeData: TResumeSchema = {
   ],
   skills: [
     {
-      name: "Full-Stack Web Engineering",
+      name: "Frontend Product Engineering",
       level: "Advanced",
       keywords: [
-        "TypeScript",
-        "Next.js",
         "React",
-        "Express.js",
-        "Node.js",
-        "REST APIs",
-        "WebSockets",
-        "Frontend Architecture",
-        "Backend Systems",
-        "Design Patterns",
-        "Testing Frameworks"
+        "Next.js",
+        "TypeScript",
+        "Modern JavaScript",
+        "UI Architecture",
+        "Component Design",
+        "State Management",
+        "Performance Optimization",
+        "Responsive Design",
+        "Accessibility"
+      ]
+    },
+    {
+      name: "Product & UX",
+      level: "Advanced",
+      keywords: [
+        "User Experience (UX)",
+        "UI/UX Design",
+        "Figma",
+        "Workflow Optimization",
+        "Human-Centered Design",
+        "Rapid Prototyping",
+        "Usability Testing"
+      ]
+    },
+    {
+      name: "AI Product Integration",
+      level: "Intermediate",
+      keywords: [
+        "OpenAI APIs",
+        "AI-Driven UX",
+        "Prompt Engineering",
+        "Conversational Interfaces",
+        "Real-time Applications"
       ]
     },
     {
       name: "Cloud & DevOps",
       level: "Intermediate",
       keywords: [
-        "AWS (EC2, S3, CloudFront)",
+        "AWS Basics (EC2, S3, CloudFront)",
         "GCP",
-        "CI/CD",
+        "CI/CD Pipelines",
         "Docker",
-        "Nginx",
-        "Serverless",
-        "Infrastructure as Code",
-        "Monitoring & Logging"
+        "Deployment Automation"
       ]
     },
     {
-      name: "Product & UX",
-      level: "Intermediate",
-      keywords: [
-        "User Experience (UX)",
-        "UI/UX Design",
-        "Figma",
-        "Workflow Optimization",
-        "User Flows",
-        "Rapid Prototyping",
-        "Human-Centered Design"
-      ]
-    },
-    {
-      name: "Project Leadership & Collaboration",
+      name: "Collaboration & Product Delivery",
       level: "Intermediate",
       keywords: [
         "Product Management",
@@ -271,17 +278,6 @@ export const resumeData: TResumeSchema = {
         "Cross-functional Communication",
         "Documentation",
         "Stakeholder Alignment"
-      ]
-    },
-    {
-      name: "AI and Applied Machine Learning",
-      level: "Intermediate",
-      keywords: [
-        "OpenAI APIs",
-        "AI Product Integration",
-        "Prompt Engineering",
-        "LLM Workflows",
-        "Conversational Interfaces"
       ]
     }
   ],
