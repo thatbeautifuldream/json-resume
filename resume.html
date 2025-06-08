@@ -1497,6 +1497,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupPrintButton();
     setupDarkModeButton();
     setupGoogleTranslate();
+    setupScrollProgress();
 });
 
 function initializeDarkReader() {
@@ -1640,6 +1641,20 @@ function setupGoogleTranslate() {
     };
 }
 
+function setupScrollProgress() {
+    // Create progress bar element
+    const progressBar = document.createElement('div');
+    progressBar.className = 'scroll-progress';
+    document.body.appendChild(progressBar);
+
+    // Update progress bar on scroll
+    window.addEventListener('scroll', () => {
+        const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (window.scrollY / windowHeight) * 100;
+        progressBar.style.width = `${progress}%`;
+    });
+}
+
 // Add print button styles
 const printStyle = document.createElement('style');
 printStyle.textContent = `
@@ -1663,8 +1678,20 @@ printStyle.textContent = `
         justify-content: center;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+    .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background-color: #FF6B00;
+        z-index: 1001;
+        transition: width 0.1s ease;
+    }
     @media print {
         .button-container {
+            display: none;
+        }
+        .scroll-progress {
             display: none;
         }
     }
