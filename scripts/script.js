@@ -1,5 +1,5 @@
 // Enhanced features for the resume page
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     initializeDarkReader();
     addFavicon();
     setupRotatingTitles();
@@ -35,15 +35,15 @@ function setupRotatingTitles() {
         "Digital Craftsman",
         "System Architect"
     ];
-    
+
     let currentIndex = 0;
     const baseTitle = document.title;
-    
+
     function rotateTitle() {
         document.title = `${titles[currentIndex]} | ${baseTitle}`;
         currentIndex = (currentIndex + 1) % titles.length;
     }
-    
+
     rotateTitle();
     setInterval(rotateTitle, 10000);
 }
@@ -144,7 +144,7 @@ function setupGoogleTranslate() {
     document.body.appendChild(translateDiv);
 
     // Initialize Google Translate
-    window.googleTranslateElementInit = function() {
+    window.googleTranslateElementInit = function () {
         new google.translate.TranslateElement({
             pageLanguage: 'en',
             includedLanguages: 'ar,zh-CN,fr,de,hi,id,it,ja,ko,pt,ru,es,th,tr,vi',
@@ -204,6 +204,9 @@ printStyle.textContent = `
             display: none;
         }
         .scroll-progress {
+            display: none;
+        }
+        #google_translate_element {
             display: none;
         }
     }
