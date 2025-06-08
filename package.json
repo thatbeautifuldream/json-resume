@@ -7,7 +7,8 @@
   "scripts": {
     "prepare:json": "tsx scripts/prepare-resume-json",
     "prepare:html": "resumed render resume.json",
-    "prepare:resume": "pnpm run prepare:json && pnpm run prepare:html",
+    "inject:script": "tsx scripts/inject-script.ts",
+    "prepare:resume": "pnpm run prepare:json && pnpm run prepare:html && pnpm run inject:script",
     "prepare": "husky"
   },
   "keywords": [
