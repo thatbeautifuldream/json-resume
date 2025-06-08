@@ -1,5 +1,10 @@
 // Enhanced features for the resume page
 document.addEventListener('DOMContentLoaded', function() {
+    // Add DarkReader script
+    const darkReaderScript = document.createElement('script');
+    darkReaderScript.src = 'https://cdn.jsdelivr.net/npm/darkreader@4.9.105/darkreader.min.js';
+    document.head.appendChild(darkReaderScript);
+
     // Add favicon
     const favicon = document.createElement('link');
     favicon.rel = 'icon';
@@ -73,6 +78,13 @@ document.addEventListener('DOMContentLoaded', function() {
     printButton.title = 'Print Resume';
     document.body.appendChild(printButton);
 
+    // Add dark mode toggle button
+    const darkModeButton = document.createElement('button');
+    darkModeButton.innerHTML = '<i class="fas fa-moon"></i>';
+    darkModeButton.className = 'print-button';
+    darkModeButton.title = 'Toggle Dark Mode';
+    document.body.appendChild(darkModeButton);
+
     // Add print button styles
     const printStyle = document.createElement('style');
     printStyle.textContent = `
@@ -92,6 +104,9 @@ document.addEventListener('DOMContentLoaded', function() {
             justify-content: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        .print-button:first-of-type {
+            right: 80px;
+        }
         @media print {
             .print-button {
                 display: none;
@@ -103,5 +118,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Print button functionality
     printButton.addEventListener('click', () => {
         window.print();
+    });
+
+    // Dark mode toggle functionality
+    let isDarkMode = false;
+    darkModeButton.addEventListener('click', () => {
+        isDarkMode = !isDarkMode;
+        if (isDarkMode) {
+            DarkReader.enable({
+                brightness: 100,
+                contrast: 90,
+                sepia: 10
+            });
+            darkModeButton.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            DarkReader.disable();
+            darkModeButton.innerHTML = '<i class="fas fa-moon"></i>';
+        }
     });
 }); 
