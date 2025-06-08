@@ -1496,6 +1496,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupEmailCopy();
     setupPrintButton();
     setupDarkModeButton();
+    setupGoogleTranslate();
 });
 
 function initializeDarkReader() {
@@ -1607,6 +1608,48 @@ function setupDarkModeButton() {
             darkModeButton.innerHTML = '<i class="fas fa-moon"></i>';
         }
     });
+}
+
+function setupGoogleTranslate() {
+    // Add Google Translate script
+    const translateScript = document.createElement('script');
+    translateScript.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    document.head.appendChild(translateScript);
+
+    // Create the div for Google Translate
+    const translateDiv = document.createElement('div');
+    translateDiv.id = 'google_translate_element';
+    translateDiv.style.position = 'fixed';
+    translateDiv.style.bottom = '20px';
+    translateDiv.style.right = '20px';
+    translateDiv.style.zIndex = '1000';
+    document.body.appendChild(translateDiv);
+
+    // Initialize Google Translate
+    window.googleTranslateElementInit = function() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'ar,zh-CN,fr,de,hi,id,it,ja,ko,pt,ru,es,th,tr,vi',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    };
+
+    // Add minimal styles to ensure visibility
+    const translateStyle = document.createElement('style');
+    translateStyle.textContent = `
+        #google_translate_element {
+            background: #fff;
+            padding: 5px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        @media print {
+            #google_translate_element {
+                display: none !important;
+            }
+        }
+    `;
+    document.head.appendChild(translateStyle);
 }
 
 // Add print button styles
