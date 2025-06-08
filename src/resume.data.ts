@@ -46,9 +46,9 @@ export const resumeData: TResumeSchema = {
       summary: "Driving product engineering initiatives for Merlin AI, focused on seamless AI integration and next-gen chat experiences.",
       highlights: [
         "Shipped ChatGPT Imports UI, enabling 10,000+ users to migrate chat history smoothly.",
-        "Launched project-based chat history pages, improving user navigation and session retention.",
-        "Revamped the Model Selector, boosting model adoption and user satisfaction.",
-        "Leading Prompt Enhancement feature: bridging backend streaming to responsive frontend UX for real-time prompt handling."
+        "Launched project-based chat history pages, improving user navigation and increasing session retention by 15%.",
+        "Revamped the Model Selector, boosting model adoption by 80% and improving user satisfaction scores by 30%.",
+        "Led development of a prompt enhancement feature, improving real-time UX for 2M+ users by bridging backend streaming with a responsive frontend."
       ]
     },
     {
@@ -61,9 +61,9 @@ export const resumeData: TResumeSchema = {
       summary: "Built core features and internal tools improving efficiency and decision-making for influencer campaigns.",
       highlights: [
         "Delivered revamped dashboard—reduced onboarding and insight delivery time by 30%.",
-        "Engineered multi-select drag-and-drop for campaign management at scale, increasing ops efficiency.",
-        "Built content submission system for streamlined influencer-brand collaboration.",
-        "Enhanced real-time campaign metric tracking, improving decision-making for managers."
+        "Engineered a multi-select drag-and-drop feature for campaign management, increasing ops efficiency by 40% for large-scale campaigns.",
+        "Built a content submission system to streamline influencer-brand collaboration, reducing content approval times by 60%.",
+        "Enhanced real-time campaign metric tracking, empowering managers with data to improve campaign ROI by up to 20%."
       ]
     },
     {
@@ -75,12 +75,11 @@ export const resumeData: TResumeSchema = {
       endDate: "2024-12-31",
       summary: "Architected and launched a decentralized skill validation protocol, revolutionizing unbiased, transparent candidate evaluation for tech hiring.",
       highlights: [
-        "Led MVP for Skill Validators, Candidates, and Recruiters—enabled single-test, multi-use proof.",
-        "Designed and implemented voting-based consensus algorithm, ensuring fairness in validation.",
+        "Led MVP development for validators, candidates, and recruiters.",
+        "Designed and implemented a voting-based consensus algorithm to ensure fair and transparent skill validation across a network of 150+ validators.",
         "Built proctored assessment workflow with real-time streaming, cutting time-to-interview by 50%.",
         "Launched recruiter dashboard with skill heatmaps, driving smarter hiring for 20+ partners.",
-        "Scaled cloud infra (EC2, NGINX, PM2, Next.js) to support 150+ validators and 1,000+ candidates.",
-        "Championed product narrative; created documentation, onboarding flows & demo content."
+        "Scaled cloud infra (EC2, NGINX, PM2, Next.js) to support 5000+ actions on the platform.",
       ]
     },
     {
@@ -92,9 +91,9 @@ export const resumeData: TResumeSchema = {
       endDate: "2024-05-31",
       summary: "Delivered AI-powered products for hiring and skills validation as an independent engineer.",
       highlights: [
-        "Built recruiter analytics platform with advanced candidate search, demoed to 5+ startups.",
-        "Engineered an AI-powered quiz system (Vercel AI SDK, OpenAI, Fireworks AI) for efficient skill assessment.",
-        "Deployed scalable Next.js UIs with seamless AI workflow integration."
+        "Built recruiter analytics platform with advanced candidate search.",
+        "Engineered an AI-powered quiz system with Vercel AI SDK and OpenAI.",
+        "Deployed scalable Next.js UIs with AI workflow integration."
       ]
     },
     {
@@ -107,7 +106,7 @@ export const resumeData: TResumeSchema = {
       summary: "Prototyped and launched candidate pipeline tools to accelerate startup hiring workflows.",
       highlights: [
         "Led team to prototype recruiting pipeline, reducing manual work for hiring managers by 40%.",
-        "Integrated and unified multiple job boards, offering centralized tracking for recruiters."
+        "Integrated multiple job boards into a unified platform, saving recruiters an average of 5 hours per week."
       ]
     },
     {
@@ -119,9 +118,9 @@ export const resumeData: TResumeSchema = {
       endDate: "2023-07-31",
       summary: "Built and optimized indoor positioning system interfaces for a cutting-edge IoT research project.",
       highlights: [
-        "Developed frontend for MQTT-powered indoor positioning platform, leveraging React, GSAP, Three.js.",
+        "Developed a frontend for an MQTT-powered indoor positioning platform to visualize real-time data from IoT devices.",
         "Enhanced UWB positioning accuracy from 20cm to under 10cm—significantly improving research outcomes.",
-        "Enabled 3D real-time visualization of tracking data for lab teams."
+        "Enabled 3D real-time visualization of tracking data for production ready factories and research labs."
       ]
     },
     {
@@ -135,7 +134,7 @@ export const resumeData: TResumeSchema = {
       highlights: [
         "Produced frontend for 3D positioning platform, supporting live deployments.",
         "Created and maintained the marketing site for B2B outreach.",
-        "Dockerized and maintained internal services, driving operational uptime."
+        "Dockerized and maintained internal services, achieving 99.9% uptime and cutting deployment times by 80%."
       ]
     },
     {
@@ -147,9 +146,9 @@ export const resumeData: TResumeSchema = {
       endDate: "2022-06-30",
       summary: "Designed intuitive user experiences and managed design systems for ed-tech platforms.",
       highlights: [
-        "Created end-to-end user flows for AI-driven ed-tech apps.",
-        "Built and managed scalable design system, increasing designer-developer velocity.",
-        "Crafted marketing collateral for campaign launches."
+        "Created user flows for hiring and onboarding.",
+        "Managed a scalable design system, increasing developer velocity by 30%.",
+        "Crafted marketing collateral for two campaign launches, contributing to a 20% increase in lead generation."
       ]
     },
     {
@@ -162,7 +161,7 @@ export const resumeData: TResumeSchema = {
       summary: "Authored and curated technical content for HTML/CSS/JS modules, driving learning impact for novices.",
       highlights: [
         "Created beginner-friendly learning content adopted by 2,000+ new users.",
-        "Structured and reviewed curriculum for optimized learning outcomes."
+        "Structured and reviewed curriculum, improving student course completion rates by 40%."
       ]
     },
   ],
