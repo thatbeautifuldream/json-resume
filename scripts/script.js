@@ -87,11 +87,15 @@ function setupEmailCopy() {
 }
 
 function setupPrintButton() {
+    const buttonContainer = document.createElement('div');
+    buttonContainer.className = 'button-container';
+    document.body.appendChild(buttonContainer);
+
     const printButton = document.createElement('button');
     printButton.innerHTML = '<i class="fas fa-print"></i>';
     printButton.className = 'print-button';
     printButton.title = 'Print Resume';
-    document.body.appendChild(printButton);
+    buttonContainer.appendChild(printButton);
 
     printButton.addEventListener('click', () => {
         window.print();
@@ -99,11 +103,12 @@ function setupPrintButton() {
 }
 
 function setupDarkModeButton() {
+    const buttonContainer = document.querySelector('.button-container');
     const darkModeButton = document.createElement('button');
     darkModeButton.innerHTML = '<i class="fas fa-moon"></i>';
     darkModeButton.className = 'print-button';
     darkModeButton.title = 'Toggle Dark Mode';
-    document.body.appendChild(darkModeButton);
+    buttonContainer.appendChild(darkModeButton);
 
     let isDarkMode = false;
     darkModeButton.addEventListener('click', () => {
@@ -145,33 +150,20 @@ function setupGoogleTranslate() {
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE
         }, 'google_translate_element');
     };
-
-    // Add minimal styles to ensure visibility
-    const translateStyle = document.createElement('style');
-    translateStyle.textContent = `
-        #google_translate_element {
-            background: #fff;
-            padding: 5px;
-            border-radius: 4px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        @media print {
-            #google_translate_element {
-                display: none !important;
-            }
-        }
-    `;
-    document.head.appendChild(translateStyle);
 }
 
 // Add print button styles
 const printStyle = document.createElement('style');
 printStyle.textContent = `
-    .print-button {
+    .button-container {
         position: fixed;
         top: 20px;
         right: 30px;
         z-index: 1000;
+        display: flex;
+        gap: 10px;
+    }
+    .print-button {
         background: #fff;
         border: 1px solid #ddd;
         border-radius: 50%;
@@ -183,11 +175,13 @@ printStyle.textContent = `
         justify-content: center;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .print-button:first-of-type {
-        right: 80px;
-    }
     @media print {
-        .print-button {
+        .button-container {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .print-button[title="Print Resume"] {
             display: none;
         }
     }
