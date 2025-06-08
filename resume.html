@@ -1496,6 +1496,7 @@ document.addEventListener('DOMContentLoaded', function () {
     setupPrintButton();
     setupDarkModeButton();
     setupGoogleTranslate();
+    handleLanguageRedirect();
     setupScrollProgress();
 });
 
@@ -1652,6 +1653,24 @@ function setupScrollProgress() {
         const progress = (window.scrollY / windowHeight) * 100;
         progressBar.style.width = `${progress}%`;
     });
+}
+
+function handleLanguageRedirect() {
+    // Only redirect if domain is your original (not already translated)
+    if (
+        window.location.hostname === 'resume.milind.app' &&
+        typeof URLSearchParams !== 'undefined'
+    ) {
+        var params = new URLSearchParams(window.location.search);
+        var lang = params.get('lang');
+        const supportedLangs = [
+            'ar', 'zh-CN', 'fr', 'de', 'hi', 'id', 'it',
+            'ja', 'ko', 'pt', 'ru', 'es', 'th', 'tr', 'vi'
+        ];
+        if (lang && supportedLangs.includes(lang)) {
+            window.location.href = `https://resume-milind-app.translate.goog/?_x_tr_sl=en&_x_tr_tl=${lang}&_x_tr_hl=${lang}`;
+        }
+    }
 }
 
 // Add print button styles
