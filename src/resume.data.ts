@@ -33,6 +33,11 @@ export const resumeData: TResumeSchema = {
         username: "milindmishra_",
         url: "https://x.com/milindmishra_",
       },
+      {
+        network: "YouTube",
+        username: "milindmishra",
+        url: "https://youtube.com/milindmishra",
+      },
     ],
     summary: "Product-focused engineer with full-stack expertise, passionate about building impactful AI, SaaS, and platform products. Proven experience founding and leading technical initiatives, shipping scalable web applications, and optimizing UX for thousands of users. Adept at rapid prototyping, collaborating across disciplines, and taking products from zero-to-one. Skilled in TypeScript, React/Next.js, and cloud infra, with a track record of accelerating hiring, analytics, and real-time systems for startups and global teams.",
   },
