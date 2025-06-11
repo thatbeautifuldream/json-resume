@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     initializeDarkReader();
     addFavicon();
-    setupRotatingTitles();
+    setupTitle();
     handlePrintParameter();
     setupSmoothScroll();
     setupEmailCopy();
@@ -25,27 +25,9 @@ function addFavicon() {
     document.head.appendChild(favicon);
 }
 
-function setupRotatingTitles() {
-    const titles = [
-        "Full Stack Engineer",
-        "Software Engineer",
-        "Creative Developer",
-        "Problem Solver",
-        "Tech Innovator",
-        "Digital Craftsman",
-        "System Architect"
-    ];
-
-    let currentIndex = 0;
-    const baseTitle = document.title;
-
-    function rotateTitle() {
-        document.title = `${titles[currentIndex]} | ${baseTitle}`;
-        currentIndex = (currentIndex + 1) % titles.length;
-    }
-
-    rotateTitle();
-    setInterval(rotateTitle, 10000);
+function setupTitle() {
+    const title = "Milind Mishra";
+    document.title = `${title} | Product Engineer`;
 }
 
 function handlePrintParameter() {
