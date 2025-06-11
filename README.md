@@ -1,5 +1,7 @@
 # JSON Resume
 
+![og-image](https://github.com/user-attachments/assets/d543f82d-154b-4341-be4f-5cbcdea5837a)
+
 > A lightweight solution to maintain your résumé in type-safe TypeScript with Zod validation, generating JSON and styled HTML on demand.
 
 > [Resume Website](https://raw.githack.com/thatbeautifuldream/json-resume/main/resume.html)
