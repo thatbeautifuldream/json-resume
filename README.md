@@ -1,6 +1,6 @@
 # JSON Resume
 
-![og-image](https://github.com/user-attachments/assets/d543f82d-154b-4341-be4f-5cbcdea5837a)
+![opengraph-image](https://github.com/user-attachments/assets/492275de-8976-460c-9dc3-7829727aa2cf)
 
 > A lightweight solution to maintain your résumé in type-safe TypeScript with Zod validation, generating JSON and styled HTML on demand.
 
