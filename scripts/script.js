@@ -2,8 +2,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     initializeDarkReader();
     addFavicon();
-    setupTitle();
-    setupSEOMetaTags();
     handlePrintParameter();
     setupSmoothScroll();
     setupEmailCopy();
@@ -24,44 +22,6 @@ function addFavicon() {
     favicon.rel = 'icon';
     favicon.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">👨🏻‍💻</text></svg>';
     document.head.appendChild(favicon);
-}
-
-function setupTitle() {
-    const title = "Milind Mishra";
-    document.title = `${title} | Product Engineer`;
-}
-
-function setupSEOMetaTags() {
-    const title = document.title;
-    const description = "A passionate Product Engineer with a knack for creating elegant and effective solutions. Explore my projects, skills, and experience on my interactive JSON resume.";
-    const imageUrl = 'https://github.com/user-attachments/assets/d543f82d-154b-4341-be4f-5cbcdea5837a';
-    const pageUrl = window.location.href.split('?')[0];
-
-    const metaInfo = [
-        { name: 'description', content: description },
-        { name: 'author', content: 'Milind Mishra' },
-        { property: 'og:title', content: title },
-        { property: 'og:description', content: description },
-        { property: 'og:image', content: imageUrl },
-        { property: 'og:url', content: pageUrl },
-        { property: 'og:site_name', content: 'Milind Mishra' },
-        { property: 'og:type', content: 'website' },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: title },
-        { name: 'twitter:description', content: description },
-        { name: 'twitter:image', content: imageUrl }
-    ];
-
-    metaInfo.forEach(info => {
-        const meta = document.createElement('meta');
-        if (info.name) {
-            meta.setAttribute('name', info.name);
-        } else if (info.property) {
-            meta.setAttribute('property', info.property);
-        }
-        meta.setAttribute('content', info.content);
-        document.head.appendChild(meta);
-    });
 }
 
 function handlePrintParameter() {
