@@ -61,10 +61,5 @@
       ]
     }
   ],
-  "functions": {
-    "resume.html": {
-      "maxDuration": 10
-    }
-  },
   "trailingSlash": false
 }
