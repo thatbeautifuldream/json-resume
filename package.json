@@ -8,7 +8,11 @@
     "prepare:json": "tsx scripts/prepare-resume-json",
     "prepare:html": "resumed render resume.json",
     "inject:script": "tsx scripts/inject-script.ts",
+    "create:icons": "node scripts/create-icons.js",
+    "create:icons:vercel": "node scripts/create-vercel-icons.js",
     "prepare:resume": "pnpm run prepare:json && pnpm run prepare:html && pnpm run inject:script",
+    "build:pwa": "pnpm run prepare:resume && pnpm run create:icons",
+    "build:vercel": "pnpm run prepare:resume && pnpm run create:icons:vercel",
     "prepare": "husky"
   },
   "keywords": [

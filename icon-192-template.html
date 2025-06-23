@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { 
+      margin: 0; 
+      padding: 20px; 
+      font-family: Arial, sans-serif; 
+      background: #f0f0f0;
+    }
+    .container {
+      text-align: center;
+    }
+    .icon-display {
+      display: inline-block;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: 20px;
+    }
+    .icon {
+      width: 192px;
+      height: 192px;
+      background: #0095ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 76px;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+    .instructions {
+      margin-top: 20px;
+      padding: 20px;
+      background: #e8f4fd;
+      border-radius: 8px;
+      border-left: 4px solid #0095ff;
+    }
+    .data-url {
+      word-break: break-all;
+      background: #f8f9fa;
+      padding: 10px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 12px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PWA Icon 192x192</h1>
+    <div class="icon-display">
+      <div class="icon">MM</div>
+    </div>
+    
+    <div class="instructions">
+      <h3>To create the PNG file:</h3>
+      <ol>
+        <li><strong>Method 1:</strong> Take a screenshot of the icon above and crop to 192x192</li>
+        <li><strong>Method 2:</strong> Use an online SVG to PNG converter with the data URL below</li>
+        <li><strong>Method 3:</strong> Use design software like Figma, Canva, or GIMP</li>
+      </ol>
+      
+      <h4>SVG Data URL:</h4>
+      <div class="data-url">data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiBmaWxsPSIjMDA5NWZmIi8+CiAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNzYiIAogICAgICAgICAgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiBmb250LXdlaWdodD0iYm9sZCI+TU08L3RleHQ+CiAgPC9zdmc+</div>
+      
+      <p><strong>Save the final PNG as:</strong> <code>icon-192.png</code> in your project root</p>
+    </div>
+  </div>
+</body>
+</html>

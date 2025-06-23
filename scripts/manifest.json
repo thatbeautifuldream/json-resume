@@ -1,0 +1,27 @@
+{
+  "name": "Milind Mishra - Resume",
+  "short_name": "Resume",
+  "description": "A passionate Product Engineer with a knack for creating elegant and effective solutions. Explore my projects, skills, and experience on my interactive JSON resume.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0095ff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["productivity", "business"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+} 

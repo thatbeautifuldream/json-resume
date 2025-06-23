@@ -14,6 +14,15 @@
   <meta name="twitter:title" content="Milind Mishra | Product Engineer">
   <meta name="twitter:description" content="A passionate Product Engineer with a knack for creating elegant and effective solutions. Explore my projects, skills, and experience on my interactive JSON resume.">
   <meta name="twitter:image" content="https://github.com/user-attachments/assets/492275de-8976-460c-9dc3-7829727aa2cf">
+  <meta name="theme-color" content="#0095ff">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Resume">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Milind Kumar Mishra</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <style>
@@ -1700,5 +1709,138 @@ printStyle.textContent = `
     }
 `;
 document.head.appendChild(printStyle); 
+
+// PWA Setup Script
+(function() {
+  'use strict';
+
+  // Register Service Worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then((registration) => {
+          console.log('SW registered: ', registration);
+        })
+        .catch((registrationError) => {
+          console.log('SW registration failed: ', registrationError);
+        });
+    });
+  }
+
+  // PWA Install Prompt
+  let deferredPrompt;
+  let installButton;
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    // Prevent the mini-infobar from appearing on mobile
+    e.preventDefault();
+    // Stash the event so it can be triggered later
+    deferredPrompt = e;
+    
+    // Create install button if it doesn't exist
+    if (!installButton) {
+      createInstallButton();
+    }
+    
+    // Show the install button
+    if (installButton) {
+      installButton.style.display = 'block';
+    }
+  });
+
+  function createInstallButton() {
+    // Create a floating install button
+    installButton = document.createElement('button');
+    installButton.innerHTML = '<i class="fas fa-download"></i> Install App';
+    installButton.style.cssText = `
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: #0095ff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 149, 255, 0.3);
+      transition: all 0.3s ease;
+      display: none;
+      font-family: inherit;
+    `;
+    
+    installButton.addEventListener('mouseover', () => {
+      installButton.style.background = '#0c65a5';
+      installButton.style.transform = 'translateY(-2px)';
+      installButton.style.boxShadow = '0 6px 16px rgba(0, 149, 255, 0.4)';
+    });
+    
+    installButton.addEventListener('mouseout', () => {
+      installButton.style.background = '#0095ff';
+      installButton.style.transform = 'translateY(0)';
+      installButton.style.boxShadow = '0 4px 12px rgba(0, 149, 255, 0.3)';
+    });
+
+    installButton.addEventListener('click', async () => {
+      if (deferredPrompt) {
+        // Show the install prompt
+        deferredPrompt.prompt();
+        // Wait for the user to respond to the prompt
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`User response to the install prompt: ${outcome}`);
+        // Clear the deferredPrompt
+        deferredPrompt = null;
+        // Hide the install button
+        installButton.style.display = 'none';
+      }
+    });
+
+    document.body.appendChild(installButton);
+  }
+
+  // Handle successful installation
+  window.addEventListener('appinstalled', () => {
+    console.log('PWA was installed');
+    if (installButton) {
+      installButton.style.display = 'none';
+    }
+    deferredPrompt = null;
+  });
+
+  // Add PWA-specific styles
+  const pwaStyles = document.createElement('style');
+  pwaStyles.textContent = `
+    @media (display-mode: standalone) {
+      body {
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      /* Hide install button when in standalone mode */
+      .pwa-install-button {
+        display: none !important;
+      }
+    }
+    
+    /* PWA splash screen improvements */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --pwa-bg: #1a1a1a;
+        --pwa-text: #ffffff;
+      }
+    }
+    
+    @media (prefers-color-scheme: light) {
+      :root {
+        --pwa-bg: #ffffff;
+        --pwa-text: #40484f;
+      }
+    }
+  `;
+  document.head.appendChild(pwaStyles);
+
+})(); 
 </script>
 </html>
